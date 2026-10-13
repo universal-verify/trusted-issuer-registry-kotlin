@@ -65,6 +65,9 @@ jobs:
           api-level: '${{ matrix.api }}'
           arch: x86_64
           target: '${{ matrix.target }}'
+          profile: medium_phone
+          ram-size: '4096'
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -show-kernel -logcat '*:e'
           script: ./gradlew -p verification/android connectedReleaseAndroidTest && python3 verification/check-device-results.py
       - run: python3 verification/measure-android.py
       - uses: actions/upload-artifact@v4
