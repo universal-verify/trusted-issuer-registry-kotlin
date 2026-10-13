@@ -1,0 +1,11 @@
+# The private BC provider loads algorithm mappings and their SPI implementations by name.
+-keep class org.bouncycastle.jcajce.provider.asymmetric.RSA$* { *; }
+-keep class org.bouncycastle.jcajce.provider.asymmetric.EC$* { *; }
+-keep class org.bouncycastle.jcajce.provider.asymmetric.X509$* { *; }
+-keep class org.bouncycastle.jcajce.provider.asymmetric.rsa.** { *; }
+-keep class org.bouncycastle.jcajce.provider.asymmetric.ec.** { *; }
+-keep class org.bouncycastle.jcajce.provider.asymmetric.x509.** { *; }
+-keep class org.bouncycastle.jcajce.provider.digest.SHA1$* { *; }
+-keep class org.bouncycastle.jcajce.provider.digest.SHA256$* { *; }
+-keep class org.bouncycastle.jcajce.provider.digest.SHA384$* { *; }
+-keep class org.bouncycastle.jcajce.provider.digest.SHA512$* { *; }

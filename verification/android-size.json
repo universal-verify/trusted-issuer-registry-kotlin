@@ -1,0 +1,15 @@
+{
+  "configuration": "minified release, API 26 minimum, API 37.2 compilation",
+  "with_sdk": {
+    "apk_bytes": 955680,
+    "dex_bytes": 1719808
+  },
+  "baseline": {
+    "apk_bytes": 18741,
+    "dex_bytes": 0
+  },
+  "delta": {
+    "apk_bytes": 936939,
+    "dex_bytes": 1719808
+  }
+}

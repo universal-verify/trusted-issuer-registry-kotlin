@@ -1,0 +1,616 @@
+public final class com/universalverify/trustedissuerregistry/CertificateFormat : java/lang/Enum, com/universalverify/trustedissuerregistry/WireValue {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/CertificateFormat$Companion;
+	public static final field PEM Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public fun getWireValue ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+}
+
+public final class com/universalverify/trustedissuerregistry/CertificateFormat$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/CertificateProvenance : java/lang/Enum, com/universalverify/trustedissuerregistry/WireValue {
+	public static final field AAMVA_DTS Lcom/universalverify/trustedissuerregistry/CertificateProvenance;
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/CertificateProvenance$Companion;
+	public static final field USER_PROVIDED Lcom/universalverify/trustedissuerregistry/CertificateProvenance;
+	public static final field UV Lcom/universalverify/trustedissuerregistry/CertificateProvenance;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public fun getWireValue ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/CertificateProvenance;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/CertificateProvenance;
+}
+
+public final class com/universalverify/trustedissuerregistry/CertificateProvenance$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/CertificateTrustResult {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/CertificateTrustResult$Companion;
+	public fun <init> (ZLcom/universalverify/trustedissuerregistry/ResolvedIssuer;Ljava/util/List;)V
+	public synthetic fun <init> (ZLcom/universalverify/trustedissuerregistry/ResolvedIssuer;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Z
+	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/ResolvedIssuer;
+	public final fun component3 ()Ljava/util/List;
+	public final fun copy (ZLcom/universalverify/trustedissuerregistry/ResolvedIssuer;Ljava/util/List;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;ZLcom/universalverify/trustedissuerregistry/ResolvedIssuer;Ljava/util/List;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getIssuer ()Lcom/universalverify/trustedissuerregistry/ResolvedIssuer;
+	public final fun getTrusted ()Z
+	public final fun getUntrustedReasons ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class com/universalverify/trustedissuerregistry/CertificateTrustResult$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/universalverify/trustedissuerregistry/CertificateTrustResult$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/CertificateTrustResult$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/Certificates {
+	public static final fun certificateToPem (Ljava/security/cert/X509Certificate;)Ljava/lang/String;
+	public static final fun parsePemCertificate (Ljava/lang/String;)Ljava/security/cert/X509Certificate;
+	public static final fun verifyCertificateSignature (Ljava/lang/String;Ljava/lang/String;)Z
+	public static final fun verifyCertificateSignature (Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
+	public static final fun verifyCertificateSignature (Ljava/security/cert/X509Certificate;Ljava/lang/String;)Z
+	public static final fun verifyCertificateSignature (Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)Z
+	public static final fun verifySignatureWithPem (Ljava/lang/String;Ljava/lang/String;[B)Z
+	public static final fun verifySignatureWithPem (Ljava/lang/String;Ljava/lang/String;[BLcom/universalverify/trustedissuerregistry/SignatureVerificationOptions;)Z
+	public static synthetic fun verifySignatureWithPem$default (Ljava/lang/String;Ljava/lang/String;[BLcom/universalverify/trustedissuerregistry/SignatureVerificationOptions;ILjava/lang/Object;)Z
+}
+
+public final class com/universalverify/trustedissuerregistry/EntityMetadata {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/EntityMetadata$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/EntityMetadata;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCountry ()Ljava/lang/String;
+	public final fun getRegion ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class com/universalverify/trustedissuerregistry/EntityMetadata$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/universalverify/trustedissuerregistry/EntityMetadata$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/universalverify/trustedissuerregistry/EntityMetadata;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/EntityMetadata$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/EntityType : java/lang/Enum, com/universalverify/trustedissuerregistry/WireValue {
+	public static final field COMMERCIAL Lcom/universalverify/trustedissuerregistry/EntityType;
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/EntityType$Companion;
+	public static final field EDUCATIONAL_INSTITUTION Lcom/universalverify/trustedissuerregistry/EntityType;
+	public static final field GOVERNMENT Lcom/universalverify/trustedissuerregistry/EntityType;
+	public static final field INTERNATIONAL_BODY Lcom/universalverify/trustedissuerregistry/EntityType;
+	public static final field NON_PROFIT Lcom/universalverify/trustedissuerregistry/EntityType;
+	public static final field OTHER Lcom/universalverify/trustedissuerregistry/EntityType;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public fun getWireValue ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/EntityType;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/EntityType;
+}
+
+public final class com/universalverify/trustedissuerregistry/EntityType$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/HashAlgorithm : java/lang/Enum {
+	public static final field SHA1 Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public static final field SHA256 Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public static final field SHA384 Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public static final field SHA512 Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public final fun getAlgorithmName ()Ljava/lang/String;
+	public final fun getDigestLength ()I
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+}
+
+public final class com/universalverify/trustedissuerregistry/Issuer {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/Issuer$Companion;
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplay;Ljava/util/List;Ljava/util/List;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplay;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/EntityType;
+	public final fun component3 ()Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public final fun component4 ()Lcom/universalverify/trustedissuerregistry/IssuerDisplay;
+	public final fun component5 ()Ljava/util/List;
+	public final fun component6 ()Ljava/util/List;
+	public final fun component7 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplay;Ljava/util/List;Ljava/util/List;Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/Issuer;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/Issuer;Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplay;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/Issuer;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCertificates ()Ljava/util/List;
+	public final fun getDisplay ()Lcom/universalverify/trustedissuerregistry/IssuerDisplay;
+	public final fun getEntityMetadata ()Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public final fun getEntityType ()Lcom/universalverify/trustedissuerregistry/EntityType;
+	public final fun getIssuerId ()Ljava/lang/String;
+	public final fun getSignature ()Ljava/lang/String;
+	public final fun getTrustScopes ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class com/universalverify/trustedissuerregistry/Issuer$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/universalverify/trustedissuerregistry/Issuer$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/universalverify/trustedissuerregistry/Issuer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/universalverify/trustedissuerregistry/Issuer;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/Issuer$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/IssuerCertificate {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/IssuerCertificate$Companion;
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+	public final fun component3 ()Ljava/util/List;
+	public final fun copy (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;)Lcom/universalverify/trustedissuerregistry/IssuerCertificate;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/IssuerCertificate;Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/IssuerCertificate;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getData ()Ljava/lang/String;
+	public final fun getFormat ()Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+	public final fun getTrustLists ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class com/universalverify/trustedissuerregistry/IssuerCertificate$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/universalverify/trustedissuerregistry/IssuerCertificate$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/universalverify/trustedissuerregistry/IssuerCertificate;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/universalverify/trustedissuerregistry/IssuerCertificate;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/IssuerCertificate$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/IssuerDisplay {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/IssuerDisplay$Companion;
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/IssuerDisplay;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/IssuerDisplay;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/IssuerDisplay;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDescription ()Ljava/lang/String;
+	public final fun getLogo ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class com/universalverify/trustedissuerregistry/IssuerDisplay$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/universalverify/trustedissuerregistry/IssuerDisplay$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/universalverify/trustedissuerregistry/IssuerDisplay;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/universalverify/trustedissuerregistry/IssuerDisplay;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/IssuerDisplay$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/IssuerDisplayOverrides {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDescription ()Ljava/lang/String;
+	public final fun getLogo ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/universalverify/trustedissuerregistry/Registry : java/lang/AutoCloseable {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/Registry$Companion;
+	public static final field minorVersion Ljava/lang/String;
+	public fun <init> (Lcom/universalverify/trustedissuerregistry/RegistryOptions;)V
+	public fun <init> (Lcom/universalverify/trustedissuerregistry/RegistryOptions;Lokhttp3/OkHttpClient;)V
+	public synthetic fun <init> (Lcom/universalverify/trustedissuerregistry/RegistryOptions;Lokhttp3/OkHttpClient;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun close ()V
+	public final synthetic fun getEndOfLifeDate (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun getEndOfLifeDateAsync ()Ljava/util/concurrent/CompletableFuture;
+	public final fun getEndOfLifeDateBlocking ()Ljava/time/Instant;
+	public final synthetic fun getIssuerFromX509AKI (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun getIssuerFromX509AKIAsync (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
+	public final fun getIssuerFromX509AKIBlocking (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/Issuer;
+	public final synthetic fun resolveCertificateTrust (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final synthetic fun resolveCertificateTrust (Ljava/security/cert/X509Certificate;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun resolveCertificateTrust$default (Lcom/universalverify/trustedissuerregistry/Registry;Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun resolveCertificateTrust$default (Lcom/universalverify/trustedissuerregistry/Registry;Ljava/security/cert/X509Certificate;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun resolveCertificateTrustAsync ()Ljava/util/concurrent/CompletableFuture;
+	public final fun resolveCertificateTrustAsync (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
+	public final fun resolveCertificateTrustAsync (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;)Ljava/util/concurrent/CompletableFuture;
+	public final fun resolveCertificateTrustAsync (Ljava/security/cert/X509Certificate;)Ljava/util/concurrent/CompletableFuture;
+	public final fun resolveCertificateTrustAsync (Ljava/security/cert/X509Certificate;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;)Ljava/util/concurrent/CompletableFuture;
+	public static synthetic fun resolveCertificateTrustAsync$default (Lcom/universalverify/trustedissuerregistry/Registry;Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;ILjava/lang/Object;)Ljava/util/concurrent/CompletableFuture;
+	public static synthetic fun resolveCertificateTrustAsync$default (Lcom/universalverify/trustedissuerregistry/Registry;Ljava/security/cert/X509Certificate;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;ILjava/lang/Object;)Ljava/util/concurrent/CompletableFuture;
+	public final fun resolveCertificateTrustBlocking ()Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public final fun resolveCertificateTrustBlocking (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public final fun resolveCertificateTrustBlocking (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public final fun resolveCertificateTrustBlocking (Ljava/security/cert/X509Certificate;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public final fun resolveCertificateTrustBlocking (Ljava/security/cert/X509Certificate;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public static synthetic fun resolveCertificateTrustBlocking$default (Lcom/universalverify/trustedissuerregistry/Registry;Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+	public static synthetic fun resolveCertificateTrustBlocking$default (Lcom/universalverify/trustedissuerregistry/Registry;Ljava/security/cert/X509Certificate;Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/CertificateTrustResult;
+}
+
+public final class com/universalverify/trustedissuerregistry/Registry$Companion {
+}
+
+public final class com/universalverify/trustedissuerregistry/RegistryErrorCategory : java/lang/Enum {
+	public static final field CRYPTOGRAPHIC_ERROR Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public static final field HTTP_ERROR Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public static final field MALFORMED_CERTIFICATE Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public static final field MALFORMED_RESPONSE Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public static final field NETWORK_ERROR Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public static final field TIMEOUT Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public static final field UNSUPPORTED_ALGORITHM Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+}
+
+public final class com/universalverify/trustedissuerregistry/RegistryException : java/lang/RuntimeException {
+	public fun <init> (Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;Ljava/lang/String;)V
+	public fun <init> (Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;Ljava/lang/String;Ljava/lang/Throwable;)V
+	public fun <init> (Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/Integer;)V
+	public synthetic fun <init> (Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/Integer;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getCategory ()Lcom/universalverify/trustedissuerregistry/RegistryErrorCategory;
+	public final fun getHttpStatus ()Ljava/lang/Integer;
+}
+
+public final class com/universalverify/trustedissuerregistry/RegistryOptions {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/RegistryOptions$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/util/List;)V
+	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;)V
+	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;)V
+	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;Z)V
+	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;)V
+	public synthetic fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public static final fun builder ()Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+	public final fun component1 ()Ljava/util/List;
+	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
+	public final fun component3 ()Ljava/time/Duration;
+	public final fun component4 ()Z
+	public final fun component5 ()Ljava/time/Duration;
+	public final fun copy (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;)Lcom/universalverify/trustedissuerregistry/RegistryOptions;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/RegistryOptions;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/RegistryOptions;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCacheEnabled ()Z
+	public final fun getCacheTtl ()Ljava/time/Duration;
+	public final fun getRevocationCheckMode ()Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
+	public final fun getTimeout ()Ljava/time/Duration;
+	public final fun getTrustedIssuerCertificates ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/universalverify/trustedissuerregistry/RegistryOptions$Builder {
+	public fun <init> ()V
+	public final fun addTrustedIssuerCertificate (Lcom/universalverify/trustedissuerregistry/UserTrustedIssuerCertificate;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+	public final fun addTrustedIssuerCertificate (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+	public final fun build ()Lcom/universalverify/trustedissuerregistry/RegistryOptions;
+	public final fun cacheEnabled (Z)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+	public final fun cacheTtl (Ljava/time/Duration;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+	public final fun revocationCheckMode (Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+	public final fun timeout (Ljava/time/Duration;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+}
+
+public final class com/universalverify/trustedissuerregistry/RegistryOptions$Companion {
+	public final fun builder ()Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+}
+
+public final class com/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/util/List;)V
+	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/TrustScope;)V
+	public synthetic fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/TrustScope;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public static final fun builder ()Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions$Builder;
+	public final fun component1 ()Ljava/util/List;
+	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/TrustScope;
+	public final fun copy (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/TrustScope;)Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/TrustScope;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getTrustLists ()Ljava/util/List;
+	public final fun getTrustScope ()Lcom/universalverify/trustedissuerregistry/TrustScope;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions$Builder {
+	public fun <init> ()V
+	public final fun addTrustList (Lcom/universalverify/trustedissuerregistry/TrustList;)Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions$Builder;
+	public final fun build ()Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions;
+	public final fun trustScope (Lcom/universalverify/trustedissuerregistry/TrustScope;)Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions$Builder;
+}
+
+public final class com/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions$Companion {
+	public final fun builder ()Lcom/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions$Builder;
+}
+
+public final class com/universalverify/trustedissuerregistry/ResolvedIssuer {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/ResolvedIssuer$Companion;
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplay;Ljava/util/List;Ljava/util/List;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/EntityType;
+	public final fun component3 ()Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public final fun component4 ()Lcom/universalverify/trustedissuerregistry/IssuerDisplay;
+	public final fun component5 ()Ljava/util/List;
+	public final fun component6 ()Ljava/util/List;
+	public final fun copy (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplay;Ljava/util/List;Ljava/util/List;)Lcom/universalverify/trustedissuerregistry/ResolvedIssuer;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/ResolvedIssuer;Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplay;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/ResolvedIssuer;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCertificates ()Ljava/util/List;
+	public final fun getDisplay ()Lcom/universalverify/trustedissuerregistry/IssuerDisplay;
+	public final fun getEntityMetadata ()Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public final fun getEntityType ()Lcom/universalverify/trustedissuerregistry/EntityType;
+	public final fun getIssuerId ()Ljava/lang/String;
+	public final fun getTrustScopes ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class com/universalverify/trustedissuerregistry/ResolvedIssuer$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/universalverify/trustedissuerregistry/ResolvedIssuer$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/universalverify/trustedissuerregistry/ResolvedIssuer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/universalverify/trustedissuerregistry/ResolvedIssuer;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/ResolvedIssuer$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/ResolvedIssuerCertificate {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/ResolvedIssuerCertificate$Companion;
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;ZLcom/universalverify/trustedissuerregistry/RevocationStatus;Ljava/util/List;)V
+	public synthetic fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;ZLcom/universalverify/trustedissuerregistry/RevocationStatus;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Z
+	public final fun component5 ()Lcom/universalverify/trustedissuerregistry/RevocationStatus;
+	public final fun component6 ()Ljava/util/List;
+	public final fun copy (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;ZLcom/universalverify/trustedissuerregistry/RevocationStatus;Ljava/util/List;)Lcom/universalverify/trustedissuerregistry/ResolvedIssuerCertificate;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/ResolvedIssuerCertificate;Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;ZLcom/universalverify/trustedissuerregistry/RevocationStatus;Ljava/util/List;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/ResolvedIssuerCertificate;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getData ()Ljava/lang/String;
+	public final fun getFormat ()Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+	public final fun getRevocationStatus ()Lcom/universalverify/trustedissuerregistry/RevocationStatus;
+	public final fun getTrustLists ()Ljava/util/List;
+	public final fun getTrusted ()Z
+	public final fun getUntrustedReasons ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class com/universalverify/trustedissuerregistry/ResolvedIssuerCertificate$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/universalverify/trustedissuerregistry/ResolvedIssuerCertificate$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/universalverify/trustedissuerregistry/ResolvedIssuerCertificate;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/universalverify/trustedissuerregistry/ResolvedIssuerCertificate;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/ResolvedIssuerCertificate$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/RevocationCheckMode : java/lang/Enum, com/universalverify/trustedissuerregistry/WireValue {
+	public static final field BEST_EFFORT Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/RevocationCheckMode$Companion;
+	public static final field REQUIRED Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
+	public static final field SKIP Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public fun getWireValue ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
+}
+
+public final class com/universalverify/trustedissuerregistry/RevocationCheckMode$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/RevocationStatus : java/lang/Enum, com/universalverify/trustedissuerregistry/WireValue {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/RevocationStatus$Companion;
+	public static final field NOT_CHECKED Lcom/universalverify/trustedissuerregistry/RevocationStatus;
+	public static final field NOT_REVOKED Lcom/universalverify/trustedissuerregistry/RevocationStatus;
+	public static final field REVOKED Lcom/universalverify/trustedissuerregistry/RevocationStatus;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public fun getWireValue ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/RevocationStatus;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/RevocationStatus;
+}
+
+public final class com/universalverify/trustedissuerregistry/RevocationStatus$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/universalverify/trustedissuerregistry/SignatureVerificationOptions {
+}
+
+public final class com/universalverify/trustedissuerregistry/SignatureVerificationOptions$Ecdsa : com/universalverify/trustedissuerregistry/SignatureVerificationOptions {
+	public fun <init> ()V
+	public fun <init> (Lcom/universalverify/trustedissuerregistry/HashAlgorithm;)V
+	public synthetic fun <init> (Lcom/universalverify/trustedissuerregistry/HashAlgorithm;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public final fun copy (Lcom/universalverify/trustedissuerregistry/HashAlgorithm;)Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$Ecdsa;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$Ecdsa;Lcom/universalverify/trustedissuerregistry/HashAlgorithm;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$Ecdsa;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHash ()Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/universalverify/trustedissuerregistry/SignatureVerificationOptions$RsaPkcs1v15 : com/universalverify/trustedissuerregistry/SignatureVerificationOptions {
+	public fun <init> (Lcom/universalverify/trustedissuerregistry/HashAlgorithm;)V
+	public final fun component1 ()Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public final fun copy (Lcom/universalverify/trustedissuerregistry/HashAlgorithm;)Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$RsaPkcs1v15;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$RsaPkcs1v15;Lcom/universalverify/trustedissuerregistry/HashAlgorithm;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$RsaPkcs1v15;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHash ()Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/universalverify/trustedissuerregistry/SignatureVerificationOptions$RsaPss : com/universalverify/trustedissuerregistry/SignatureVerificationOptions {
+	public fun <init> (Lcom/universalverify/trustedissuerregistry/HashAlgorithm;I)V
+	public final fun component1 ()Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public final fun component2 ()I
+	public final fun copy (Lcom/universalverify/trustedissuerregistry/HashAlgorithm;I)Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$RsaPss;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$RsaPss;Lcom/universalverify/trustedissuerregistry/HashAlgorithm;IILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/SignatureVerificationOptions$RsaPss;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHash ()Lcom/universalverify/trustedissuerregistry/HashAlgorithm;
+	public final fun getSaltLength ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/universalverify/trustedissuerregistry/TrustList : java/lang/Enum, com/universalverify/trustedissuerregistry/WireValue {
+	public static final field AAMVA_DTS Lcom/universalverify/trustedissuerregistry/TrustList;
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/TrustList$Companion;
+	public static final field UV Lcom/universalverify/trustedissuerregistry/TrustList;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public fun getWireValue ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/TrustList;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/TrustList;
+}
+
+public final class com/universalverify/trustedissuerregistry/TrustList$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/TrustScope : java/lang/Enum, com/universalverify/trustedissuerregistry/WireValue {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/TrustScope$Companion;
+	public static final field DOCUMENT_SIGNING Lcom/universalverify/trustedissuerregistry/TrustScope;
+	public static final field GOVERNMENT_ISSUED_ID Lcom/universalverify/trustedissuerregistry/TrustScope;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public fun getWireValue ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/TrustScope;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/TrustScope;
+}
+
+public final class com/universalverify/trustedissuerregistry/TrustScope$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/UntrustedReason : java/lang/Enum, com/universalverify/trustedissuerregistry/WireValue {
+	public static final field CERTIFICATE_AKI_MISSING Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field CERTIFICATE_EXPIRED Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field CERTIFICATE_MISSING Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field CERTIFICATE_NOT_YET_VALID Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field CERTIFICATE_REVOKED Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field CERTIFICATE_SIGNATURE_VERIFICATION_FAILED Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/UntrustedReason$Companion;
+	public static final field ISSUER_CERTIFICATE_EXPIRED Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field ISSUER_CERTIFICATE_NOT_FOUND Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field ISSUER_CERTIFICATE_NOT_IN_TRUST_LISTS Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field ISSUER_CERTIFICATE_NOT_YET_VALID Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field ISSUER_FETCH_FAILED Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field ISSUER_MISSING_REQUIRED_TRUST_SCOPE Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static final field REVOCATION_STATUS_UNDETERMINED Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public fun getWireValue ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+	public static fun values ()[Lcom/universalverify/trustedissuerregistry/UntrustedReason;
+}
+
+public final class com/universalverify/trustedissuerregistry/UntrustedReason$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/universalverify/trustedissuerregistry/UserTrustedIssuerCertificate {
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;)V
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;)V
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/EntityType;)V
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;)V
+	public fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;)V
+	public synthetic fun <init> (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Lcom/universalverify/trustedissuerregistry/EntityType;
+	public final fun component5 ()Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public final fun component6 ()Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;
+	public final fun copy (Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;)Lcom/universalverify/trustedissuerregistry/UserTrustedIssuerCertificate;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/UserTrustedIssuerCertificate;Ljava/lang/String;Lcom/universalverify/trustedissuerregistry/CertificateFormat;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/EntityType;Lcom/universalverify/trustedissuerregistry/EntityMetadata;Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/UserTrustedIssuerCertificate;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getData ()Ljava/lang/String;
+	public final fun getDisplay ()Lcom/universalverify/trustedissuerregistry/IssuerDisplayOverrides;
+	public final fun getEntityMetadata ()Lcom/universalverify/trustedissuerregistry/EntityMetadata;
+	public final fun getEntityType ()Lcom/universalverify/trustedissuerregistry/EntityType;
+	public final fun getFormat ()Lcom/universalverify/trustedissuerregistry/CertificateFormat;
+	public final fun getTrustScopes ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/universalverify/trustedissuerregistry/WireValue {
+	public abstract fun getWireValue ()Ljava/lang/String;
+}
+

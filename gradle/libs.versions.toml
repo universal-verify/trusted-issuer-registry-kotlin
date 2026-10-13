@@ -1,0 +1,32 @@
+[versions]
+kotlin = "2.4.20"
+coroutines = "1.11.0"
+serialization = "1.11.0"
+okhttp = "5.5.0"
+bouncycastle = "1.86"
+junit = "6.1.3"
+ktlint-plugin = "14.2.0"
+dokka = "2.2.0"
+icu = "78.3"
+
+[libraries]
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm", version.ref = "serialization" }
+okhttp-jvm = { module = "com.squareup.okhttp3:okhttp-jvm", version.ref = "okhttp" }
+okhttp-android = { module = "com.squareup.okhttp3:okhttp-android", version.ref = "okhttp" }
+bcprov = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncycastle" }
+bcutil = { module = "org.bouncycastle:bcutil-jdk18on", version.ref = "bouncycastle" }
+bcpkix = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncycastle" }
+canonical-numbers = { module = "io.github.erdtman:java-json-canonicalization", version = "1.1" }
+icu4j = { module = "com.ibm.icu:icu4j", version.ref = "icu" }
+junit = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-launcher = { module = "org.junit.platform:junit-platform-launcher", version = "6.1.3" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+mockwebserver = { module = "com.squareup.okhttp3:mockwebserver3", version.ref = "okhttp" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint-plugin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }

@@ -1,0 +1,1066 @@
+{
+  "sourceCommit": "c236f226a916de51d2fb93b89e08660d018f2620",
+  "now": "2026-10-08T00:00:00Z",
+  "certificates": {
+    "issuer": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+    "leaf": "-----BEGIN CERTIFICATE-----\nMIIBfjCCASWgAwIBAgIBAjAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowDzENMAsGA1UEAwwETGVhZjBZMBMG\nByqGSM49AgEGCCqGSM49AwEHA0IABCRcj+cIyY+rmg3Jh5fnEBO8nq4K0uSuaboR\nUZJCwzwi8PH0OwqZSixyQybAnQCIj3xdKYRl75RC41NsPVAXfq+jRTBDMA8GA1Ud\nIwQIMAaABAECAwQwMAYDVR0fBCkwJzAloCOgIYYfaHR0cHM6Ly9leGFtcGxlLnRl\nc3QvaXNzdWVyLmNybDAKBggqhkjOPQQDAgNHADBEAiAQyHqL9E28RHZwxrCJdZfW\nM7V1PSa8aB+D95caaeODDwIgPRr9/ii6jnMhOHLrGCg4twLZlWh+R/6ndCNo+nnV\n1g0=\n-----END CERTIFICATE-----",
+    "reorderedName": "-----BEGIN CERTIFICATE-----\nMIIBgDCCASWgAwIBAgIBAzAKBggqhkjOPQQDAjA4MQ0wCwYDVQQDDARSb290MRow\nGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTELMAkGA1UEBhMCVVMwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowDzENMAsGA1UEAwwETGVhZjBZMBMG\nByqGSM49AgEGCCqGSM49AwEHA0IABCRcj+cIyY+rmg3Jh5fnEBO8nq4K0uSuaboR\nUZJCwzwi8PH0OwqZSixyQybAnQCIj3xdKYRl75RC41NsPVAXfq+jRTBDMA8GA1Ud\nIwQIMAaABAECAwQwMAYDVR0fBCkwJzAloCOgIYYfaHR0cHM6Ly9leGFtcGxlLnRl\nc3QvaXNzdWVyLmNybDAKBggqhkjOPQQDAgNJADBGAiEAiUMLk8Ypy424wCqpOavS\nrgF4ppMNkc3pEhQIfLJznxcCIQCWHvBpAfMRaqeve1owK6PLA0eeXWmOXed6JWRR\n37cwSQ==\n-----END CERTIFICATE-----",
+    "normalizedName": "-----BEGIN CERTIFICATE-----\nMIIBoTCCAUegAwIBAgIBBDAKBggqhkjOPQQDAjBaMRAwDgYDVQQGDAfvu791c8Kg\nMTcwNQYDVQQKHi4AIAAgAEUAWABBAE0AUABMAEUAIAAgACAAQQBVAFQASABPAFIA\nSQBUAFkAIAAgMQ0wCwYDVQQDDARyb290MCIYDzIwMDAwMTAxMDAwMDAwWhgPMjEw\nMDAxMDEwMDAwMDBaMA8xDTALBgNVBAMMBExlYWYwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAAQkXI/nCMmPq5oNyYeX5xATvJ6uCtLkrmm6EVGSQsM8IvDx9DsKmUos\nckMmwJ0AiI98XSmEZe+UQuNTbD1QF36vo0UwQzAPBgNVHSMECDAGgAQBAgMEMDAG\nA1UdHwQpMCcwJaAjoCGGH2h0dHBzOi8vZXhhbXBsZS50ZXN0L2lzc3Vlci5jcmww\nCgYIKoZIzj0EAwIDSAAwRQIgTPpGRbPhCfKXhfOuAYhOmRdwBZHcQEHNGylV970X\n0zkCIQCwAhl4qmQKv95JrhI4LX2sIM7dZw+1nNZF6dnhw/n6+g==\n-----END CERTIFICATE-----",
+    "softHyphen": "-----BEGIN CERTIFICATE-----\nMIIBgTCCASegAwIBAgIBBTAKBggqhkjOPQQDAjA6MQswCQYDVQQGEwJVUzEcMBoG\nA1UECgwTRXhhbXBsZSBBdXRob3JpdHnCrTENMAsGA1UEAwwEUm9vdDAiGA8yMDAw\nMDEwMTAwMDAwMFoYDzIxMDAwMTAxMDAwMDAwWjAPMQ0wCwYDVQQDDARMZWFmMFkw\nEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5p\nuhFRkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6NFMEMwDwYD\nVR0jBAgwBoAEAQIDBDAwBgNVHR8EKTAnMCWgI6Ahhh9odHRwczovL2V4YW1wbGUu\ndGVzdC9pc3N1ZXIuY3JsMAoGCCqGSM49BAMCA0gAMEUCIQCGa/e6SgZyba5cN0A1\nEchXWyOdxmaZQpkuCCyubNYJsgIgVjY1zq+/VgAq+xcwtL32B3aVKAa+mMIdU2Aw\n6TC/O5s=\n-----END CERTIFICATE-----",
+    "variationSelector": "-----BEGIN CERTIFICATE-----\nMIIBgjCCASigAwIBAgIBBjAKBggqhkjOPQQDAjA7MQswCQYDVQQGEwJVUzEdMBsG\nA1UECgwURXhhbXBsZSBBdXRob3JpdHnvuI8xDTALBgNVBAMMBFJvb3QwIhgPMjAw\nMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowDzENMAsGA1UEAwwETGVhZjBZ\nMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCRcj+cIyY+rmg3Jh5fnEBO8nq4K0uSu\naboRUZJCwzwi8PH0OwqZSixyQybAnQCIj3xdKYRl75RC41NsPVAXfq+jRTBDMA8G\nA1UdIwQIMAaABAECAwQwMAYDVR0fBCkwJzAloCOgIYYfaHR0cHM6Ly9leGFtcGxl\nLnRlc3QvaXNzdWVyLmNybDAKBggqhkjOPQQDAgNIADBFAiEA42OWqRcXHAZNYZUW\n77gWvKsds5smcfPF1nzHdU4CbboCIB7jjybxWDFTlqJBuGACC179jqopPT+yaboo\nDrWAW1j7\n-----END CERTIFICATE-----",
+    "graphemeJoiner": "-----BEGIN CERTIFICATE-----\nMIIBgTCCASegAwIBAgIBBzAKBggqhkjOPQQDAjA6MQswCQYDVQQGEwJVUzEcMBoG\nA1UECgwTRXhhbc2PcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdDAiGA8yMDAw\nMDEwMTAwMDAwMFoYDzIxMDAwMTAxMDAwMDAwWjAPMQ0wCwYDVQQDDARMZWFmMFkw\nEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5p\nuhFRkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6NFMEMwDwYD\nVR0jBAgwBoAEAQIDBDAwBgNVHR8EKTAnMCWgI6Ahhh9odHRwczovL2V4YW1wbGUu\ndGVzdC9pc3N1ZXIuY3JsMAoGCCqGSM49BAMCA0gAMEUCIB8RxJ7YjIwhh2xOJlUE\nYphRIb5J95NY978Ex0blcDdbAiEA+wtSvdC11AVh46fCnJQUfetIinnkiP0XlAmY\nvyKlyGw=\n-----END CERTIFICATE-----",
+    "wordJoiner": "-----BEGIN CERTIFICATE-----\nMIIBgjCCASigAwIBAgIBCDAKBggqhkjOPQQDAjA7MQswCQYDVQQGEwJVUzEdMBsG\nA1UECgwURXhhbXBsZSBBdXRob3JpdHnigaAxDTALBgNVBAMMBFJvb3QwIhgPMjAw\nMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowDzENMAsGA1UEAwwETGVhZjBZ\nMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCRcj+cIyY+rmg3Jh5fnEBO8nq4K0uSu\naboRUZJCwzwi8PH0OwqZSixyQybAnQCIj3xdKYRl75RC41NsPVAXfq+jRTBDMA8G\nA1UdIwQIMAaABAECAwQwMAYDVR0fBCkwJzAloCOgIYYfaHR0cHM6Ly9leGFtcGxl\nLnRlc3QvaXNzdWVyLmNybDAKBggqhkjOPQQDAgNIADBFAiAZBtlEQALZxL46L6fG\nVvR0eFa8TOVu/NY4AnOOLss9SgIhAKAipMXTcsa5PtFMsZ8TsO23nuuxy+whmvwb\n/YcmYK4a\n-----END CERTIFICATE-----",
+    "arabicIssuer": "-----BEGIN CERTIFICATE-----\nMIIBkDCCATagAwIBAgIBCTAKBggqhkjOPQQDAjA+MQswCQYDVQQGEwJVUzEgMB4G\nA1UECgwX2YfZitim2Kkg2KfZhNil2LXYr9in2LExDTALBgNVBAMMBFJvb3QwIhgP\nMjAwMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowPjELMAkGA1UEBhMCVVMx\nIDAeBgNVBAoMF9mH2YrYptipINin2YTYpdi12K/Yp9ixMQ0wCwYDVQQDDARSb290\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS\n5K5puhFRkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8w\nDQYDVR0OBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUC\nICRMTcY0GSQSzfxBk9lDP4OQpUI26uAydNYaLjgNcYjHAiEA/Y/QltZGbXlRd5w9\npXf8VIoNrOu945L6ZsNY5c7fXQo=\n-----END CERTIFICATE-----",
+    "hebrewIssuer": "-----BEGIN CERTIFICATE-----\nMIIBcTCCARigAwIBAgIBCjAKBggqhkjOPQQDAjAvMQswCQYDVQQGEwJVUzERMA8G\nA1UECgwI16jXqdeV16oxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAxMDEwMDAwMDBa\nGA8yMTAwMDEwMTAwMDAwMFowLzELMAkGA1UEBhMCVVMxETAPBgNVBAoMCNeo16nX\nldeqMQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP\n5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0p\nhGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAECAwQwDgYDVR0PAQH/BAQDAgEC\nMAoGCCqGSM49BAMCA0cAMEQCIGPaCmqlSs7uY1FMfbUdfsD3hfl6NjIgZvc53YPR\n1T89AiAW3bOWATXNo+Za1b0Gna6xs9OglnncUp5qkO2GMKUTmw==\n-----END CERTIFICATE-----",
+    "universalIssuer": "-----BEGIN CERTIFICATE-----\nMIIB6jCCAZCgAwIBAgIBCzAKBggqhkjOPQQDAjBrMQswCQYDVQQGEwJVUzFNMEsG\nA1UEChxEAAAARQAAAHgAAABhAAAAbQAAAHAAAABsAAAAZQAAACAAAABBAAAAdQAA\nAHQAAABoAAAAbwAAAHIAAABpAAAAdAAAAHkxDTALBgNVBAMMBFJvb3QwIhgPMjAw\nMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowazELMAkGA1UEBhMCVVMxTTBL\nBgNVBAocRAAAAEUAAAB4AAAAYQAAAG0AAABwAAAAbAAAAGUAAAAgAAAAQQAAAHUA\nAAB0AAAAaAAAAG8AAAByAAAAaQAAAHQAAAB5MQ0wCwYDVQQDDARSb290MFkwEwYH\nKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFR\nkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0O\nBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIHbeGxOR\n4VqKlpnAUPt9AJCjgR0pyb7I/q/8+o5wljp0AiEA8HgqCA45J85ht1wxGfAa3ICj\nr2KKJa5NwzCXWyQuxmk=\n-----END CERTIFICATE-----",
+    "universalUnicodeIssuer": "-----BEGIN CERTIFICATE-----\nMIIBuzCCAWCgAwIBAgIBDDAKBggqhkjOPQQDAjBTMQswCQYDVQQGEwJVUzE1MDMG\nA1UEChwsAAAAQQAAAHUAAAB0AAAAbwAAAHIAAABpAAAAdAAAAOkAAAAgAADYPAAA\n39sxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAw\nMDAwMFowUzELMAkGA1UEBhMCVVMxNTAzBgNVBAocLAAAAEEAAAB1AAAAdAAAAG8A\nAAByAAAAaQAAAHQAAADpAAAAIAAA2DwAAN/bMQ0wCwYDVQQDDARSb290MFkwEwYH\nKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFR\nkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0O\nBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0kAMEYCIQD+NMJA\nmRDNN89+xAxad01FUum19kldebWf8RXnu4kMJAIhAIqFBE41BhJaHvukJIQ7U/A+\nghVKLTY4dNrfmb1jwTH1\n-----END CERTIFICATE-----",
+    "universalFallbackIssuer": "-----BEGIN CERTIFICATE-----\nMIICCTCCAbCgAwIBAgIBDTAKBggqhkjOPQQDAjB7MQswCQYDVQQGEwJVUzEdMBsG\nA1UECBwUAAAAVQAAAFMAAAAtAAAAVgAAAEExTTBLBgNVBAMcRAAAAEUAAAB4AAAA\nYQAAAG0AAABwAAAAbAAAAGUAAAAgAAAAQQAAAHUAAAB0AAAAaAAAAG8AAAByAAAA\naQAAAHQAAAB5MCIYDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMHsx\nCzAJBgNVBAYTAlVTMR0wGwYDVQQIHBQAAABVAAAAUwAAAC0AAABWAAAAQTFNMEsG\nA1UEAxxEAAAARQAAAHgAAABhAAAAbQAAAHAAAABsAAAAZQAAACAAAABBAAAAdQAA\nAHQAAABoAAAAbwAAAHIAAABpAAAAdAAAAHkwWTATBgcqhkjOPQIBBggqhkjOPQMB\nBwNCAAQkXI/nCMmPq5oNyYeX5xATvJ6uCtLkrmm6EVGSQsM8IvDx9DsKmUosckMm\nwJ0AiI98XSmEZe+UQuNTbD1QF36voyEwHzANBgNVHQ4EBgQEAQIDBDAOBgNVHQ8B\nAf8EBAMCAQIwCgYIKoZIzj0EAwIDRwAwRAIgK5IhnbWOgNJHuj9f/f49F/9/TZkW\nlu5FomtlU4w94coCIAUCG1TUnWwm/LSPysFJyB/q9dHXsGynA/8YZt0qtCDZ\n-----END CERTIFICATE-----",
+    "arabicLeaf": "-----BEGIN CERTIFICATE-----\nMIIBhzCCAS2gAwIBAgIBDjAKBggqhkjOPQQDAjBAMQswCQYDVQQGEwJVUzEiMCAG\nA1UECgwZ2YfZgNmK2KbYqSDYp9mE2KXYtdiv2KfYsTENMAsGA1UEAwwEUm9vdDAi\nGA8yMDAwMDEwMTAwMDAwMFoYDzIxMDAwMTAxMDAwMDAwWjAPMQ0wCwYDVQQDDARM\nZWFmMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7ye\nrgrS5K5puhFRkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6NF\nMEMwDwYDVR0jBAgwBoAEAQIDBDAwBgNVHR8EKTAnMCWgI6Ahhh9odHRwczovL2V4\nYW1wbGUudGVzdC9pc3N1ZXIuY3JsMAoGCCqGSM49BAMCA0gAMEUCIQCHB9ssuFy+\n/fofYBXzRPDPt8e9SHyvL+G1jj6zpw8qrAIgQo4SGOKufezc15hvA0NeIKnmfHq3\n4vu6ivMY0xjw/KI=\n-----END CERTIFICATE-----",
+    "hebrewLeaf": "-----BEGIN CERTIFICATE-----\nMIIBeDCCAR6gAwIBAgIBDzAKBggqhkjOPQQDAjAxMQswCQYDVQQGEwJVUzETMBEG\nA1UECgwK16jWkdep15XXqjENMAsGA1UEAwwEUm9vdDAiGA8yMDAwMDEwMTAwMDAw\nMFoYDzIxMDAwMTAxMDAwMDAwWjAPMQ0wCwYDVQQDDARMZWFmMFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6NFMEMwDwYDVR0jBAgwBoAE\nAQIDBDAwBgNVHR8EKTAnMCWgI6Ahhh9odHRwczovL2V4YW1wbGUudGVzdC9pc3N1\nZXIuY3JsMAoGCCqGSM49BAMCA0gAMEUCIGKgzlS0dsmZbyv+vJPz/GgB4jizkj8b\nL68Bt5m6PVuwAiEAhnyzToiCbvIlj6SbjGGeZrtb9GdqNnQ3/y9/wG626NE=\n-----END CERTIFICATE-----",
+    "universalUnicodeLeaf": "-----BEGIN CERTIFICATE-----\nMIIBmjCCAUCgAwIBAgIBEDAKBggqhkjOPQQDAjBTMQswCQYDVQQGEwJVUzE1MDMG\nA1UEChwsAAAAQQAAAHUAAAB0AAAAbwAAAHIAAABpAAAAdAAAAOkAAAAgAADYPAAA\n39sxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAw\nMDAwMFowDzENMAsGA1UEAwwETGVhZjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA\nBCRcj+cIyY+rmg3Jh5fnEBO8nq4K0uSuaboRUZJCwzwi8PH0OwqZSixyQybAnQCI\nj3xdKYRl75RC41NsPVAXfq+jRTBDMA8GA1UdIwQIMAaABAECAwQwMAYDVR0fBCkw\nJzAloCOgIYYfaHR0cHM6Ly9leGFtcGxlLnRlc3QvaXNzdWVyLmNybDAKBggqhkjO\nPQQDAgNIADBFAiBEUqb99l0F25Z6JdqbwJU4oa/zKvqZIssX/g9R2K5AhAIhANAO\nfsTeiHvgwVpPSGm0CNjCHvfr/aQ8Rd2aW1dF4FoH\n-----END CERTIFICATE-----",
+    "universalFallbackLeaf": "-----BEGIN CERTIFICATE-----\nMIIBwjCCAWigAwIBAgIBETAKBggqhkjOPQQDAjB7MQswCQYDVQQGEwJVUzEdMBsG\nA1UECBwUAAAAVQAAAFMAAAAtAAAAVgAAAEExTTBLBgNVBAMcRAAAAEUAAAB4AAAA\nYQAAAG0AAABwAAAAbAAAAGUAAAAgAAAAQQAAAHUAAAB0AAAAaAAAAG8AAAByAAAA\naQAAAHQAAAB5MCIYDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMA8x\nDTALBgNVBAMMBExlYWYwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQkXI/nCMmP\nq5oNyYeX5xATvJ6uCtLkrmm6EVGSQsM8IvDx9DsKmUosckMmwJ0AiI98XSmEZe+U\nQuNTbD1QF36vo0UwQzAPBgNVHSMECDAGgAQBAgMEMDAGA1UdHwQpMCcwJaAjoCGG\nH2h0dHBzOi8vZXhhbXBsZS50ZXN0L2lzc3Vlci5jcmwwCgYIKoZIzj0EAwIDSAAw\nRQIhAMCYuQo4ogfBS1ghwEk1X5eYCeTekb1vQAOz8neWKm6cAiAlJqNoWZ1kIa9c\nyUdMwkiSO+TxebVJ7tZLqBpWNCRddQ==\n-----END CERTIFICATE-----",
+    "pssIssuer": "-----BEGIN CERTIFICATE-----\nMIIDeDCCAiygAwIBAgIBEjBBBgkqhkiG9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUA\noRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMCASAwODELMAkGA1UEBhMC\nVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MCIY\nDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMDgxCzAJBgNVBAYTAlVT\nMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdDCCASIw\nDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALcIiasL1t40PbYCuTXphvnithTz\neuoUk0SyY+TxH5TgymCWXtVxIsf2Wcdn2wjEPYsD2lbi+97EgmxIm8MaHMpCRtkW\nTSaQg0DPA/3Fcd7e+BGUJDJ0nw0PjysngqX5WpOXdo0mu6U7QZxUwfGktIkoUMqC\nDT7YVFisdVYokdQ1bH6b3E1PBViCFr1ZbMmOCBiSHoXQy806lEiGIcDxcpHABqLP\nmYUoRCtp9MDjFZ9w6eU1i6ezwX0VqgT5uExOSc9+Xjh4fPJ5uRJCNgpKH0kijMfG\njZTue43Ajyl9HCupmfYkqI1uGlssg+Pd8tQRdlNOdIH//9AMPA3aF00N/zECAwEA\nAaMhMB8wDQYDVR0OBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMEEGCSqGSIb3DQEB\nCjA0oA8wDQYJYIZIAWUDBAIBBQChHDAaBgkqhkiG9w0BAQgwDQYJYIZIAWUDBAIB\nBQCiAwIBIAOCAQEASe/GP+F8aDTaFOxLjddBHF8BzKmmL+JjsMD2cZbFTolvOpWN\nXuqaOFh9474RFpPvT0faG7A7j9bJq8hhf+WtjhVXvq1sPaZu/xvjzOwSZKPhaH7E\nrHF5de3lSbqOsZNKfz33/by0XgXCbAhZ8RDh3OkgH7fmhqrLBkyQUJuRVaswrCDS\nrrKmHcahExQs9tfZNfI03Z2jTHgrslRXtcLWZPC32fIlx5G+Tz/Uo9AKvUgpxbCF\noc3S6Cgj8Chym8IIOeEtgp/UInmzmbBy5QQA4zssuQCntunjcfLDyTfiledyT6mS\nnZ0vSUwvK0ADSMs9P+lRtHr/skk4kamLzj7ZQQ==\n-----END CERTIFICATE-----",
+    "pssLeaf": "-----BEGIN CERTIFICATE-----\nMIIDczCCAiegAwIBAgIBEzBBBgkqhkiG9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUA\noRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMCASAwODELMAkGA1UEBhMC\nVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MCIY\nDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMA8xDTALBgNVBAMMBExl\nYWYwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3CImrC9beND22Ark1\n6Yb54rYU83rqFJNEsmPk8R+U4Mpgll7VcSLH9lnHZ9sIxD2LA9pW4vvexIJsSJvD\nGhzKQkbZFk0mkINAzwP9xXHe3vgRlCQydJ8ND48rJ4Kl+VqTl3aNJrulO0GcVMHx\npLSJKFDKgg0+2FRYrHVWKJHUNWx+m9xNTwVYgha9WWzJjggYkh6F0MvNOpRIhiHA\n8XKRwAaiz5mFKEQrafTA4xWfcOnlNYuns8F9FaoE+bhMTknPfl44eHzyebkSQjYK\nSh9JIozHxo2U7nuNwI8pfRwrqZn2JKiNbhpbLIPj3fLUEXZTTnSB///QDDwN2hdN\nDf8xAgMBAAGjRTBDMA8GA1UdIwQIMAaABAECAwQwMAYDVR0fBCkwJzAloCOgIYYf\naHR0cHM6Ly9leGFtcGxlLnRlc3QvaXNzdWVyLmNybDBBBgkqhkiG9w0BAQowNKAP\nMA0GCWCGSAFlAwQCAQUAoRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMC\nASADggEBAKFthWQK+2LCaZSYwgHrWdQCzdOfBGolDgAjKFVbK6btptKbDbSD6qBU\n4mJfUijFpuxdybqIgFNifFya3NQYEInDqXTqp9AS3SBllyy4Lb5NAwelzsm5v9yF\nvloWEr3iOW6S7A8GBsnMFH1HtlvXD0tkcam6kDlmdFWih5mQN6HsRP4HdHldek9l\n9q/cR75IOe1rutOOFFUGwC2M+GU23o/UhISER0Ry2JEAUa+OapYBuuN5E450pTA2\nrGwC0F+vsDizHT2Fz1Tt47pvvAbzbhrTTlO5v903m7UKAFXr920yVqc+P4Q3QqdS\na0USoOn/c3Xzd9stiqFi0V8qiYXEwQg=\n-----END CERTIFICATE-----",
+    "pssOutOfOrder": "-----BEGIN CERTIFICATE-----\nMIIDczCCAiegAwIBAgIBEzBBBgkqhkiG9w0BAQowNKIDAgEgoRwwGgYJKoZIhvcN\nAQEIMA0GCWCGSAFlAwQCAQUAoA8wDQYJYIZIAWUDBAIBBQAwODELMAkGA1UEBhMC\nVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MCIY\nDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMA8xDTALBgNVBAMMBExl\nYWYwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3CImrC9beND22Ark1\n6Yb54rYU83rqFJNEsmPk8R+U4Mpgll7VcSLH9lnHZ9sIxD2LA9pW4vvexIJsSJvD\nGhzKQkbZFk0mkINAzwP9xXHe3vgRlCQydJ8ND48rJ4Kl+VqTl3aNJrulO0GcVMHx\npLSJKFDKgg0+2FRYrHVWKJHUNWx+m9xNTwVYgha9WWzJjggYkh6F0MvNOpRIhiHA\n8XKRwAaiz5mFKEQrafTA4xWfcOnlNYuns8F9FaoE+bhMTknPfl44eHzyebkSQjYK\nSh9JIozHxo2U7nuNwI8pfRwrqZn2JKiNbhpbLIPj3fLUEXZTTnSB///QDDwN2hdN\nDf8xAgMBAAGjRTBDMA8GA1UdIwQIMAaABAECAwQwMAYDVR0fBCkwJzAloCOgIYYf\naHR0cHM6Ly9leGFtcGxlLnRlc3QvaXNzdWVyLmNybDBBBgkqhkiG9w0BAQowNKID\nAgEgoRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAoA8wDQYJYIZIAWUDBAIB\nBQADggEBAGsP2YL2UZ2v1EIOnitC8YbcZunnUhlrQLSkQPRqc8We7PRQx0uGNb2M\nRa/sPCoTLahBx6bt7m2gKdfmqL/pzlbzmnVvxHD0bO4FHn38KRh9qFsr82bC3PgB\n/vd0IsNj8GSvGWOd1p6ytszVkHT2yP/0RiMzf5g4ljV6uXDlSozEhIYykVgcXohe\nzpDYaIvGZ1a3sGjPs/ey/aslh9iYULUSVFZVV9oYkvsEKr6IHCOIWX1G7KyqAuK7\nTZR/nCN5I5rlKjoC5YTU2PopGe8bcBKVifEuNPDeOSSgmOi6QugmlEWnZsbxAVpU\nZVDA3HbWgW90/4qGvIaKb6OsF63oEGc=\n-----END CERTIFICATE-----",
+    "pssKeyOutOfOrder": "-----BEGIN CERTIFICATE-----\nMIIDrDCCAmCgAwIBAgIBFDBBBgkqhkiG9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUA\noRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMCASAwODELMAkGA1UEBhMC\nVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MCIY\nDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMDgxCzAJBgNVBAYTAlVT\nMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdDCCAVYw\nQQYJKoZIhvcNAQEKMDSiAwIBIKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQMEAgEF\nAKAPMA0GCWCGSAFlAwQCAQUAA4IBDwAwggEKAoIBAQC3CImrC9beND22Ark16Yb5\n4rYU83rqFJNEsmPk8R+U4Mpgll7VcSLH9lnHZ9sIxD2LA9pW4vvexIJsSJvDGhzK\nQkbZFk0mkINAzwP9xXHe3vgRlCQydJ8ND48rJ4Kl+VqTl3aNJrulO0GcVMHxpLSJ\nKFDKgg0+2FRYrHVWKJHUNWx+m9xNTwVYgha9WWzJjggYkh6F0MvNOpRIhiHA8XKR\nwAaiz5mFKEQrafTA4xWfcOnlNYuns8F9FaoE+bhMTknPfl44eHzyebkSQjYKSh9J\nIozHxo2U7nuNwI8pfRwrqZn2JKiNbhpbLIPj3fLUEXZTTnSB///QDDwN2hdNDf8x\nAgMBAAGjITAfMA0GA1UdDgQGBAQBAgMEMA4GA1UdDwEB/wQEAwIBAjBBBgkqhkiG\n9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUAoRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFl\nAwQCAQUAogMCASADggEBABTd70NbGhfoJfOtHzHvmNOV7ItgK12Y6IjILUU8LG+B\nHlK8a+keWlgF33QkceUcr2iQcSxN7ykKbGD2wJUzJx0IAhCbjh57y8KFp1A8hJSa\npelY1YnBXa4NzZZI5PO9KHc6xH1HGp6p53gGPXCgO/3VJuedyK3s41vaImZA+MHw\nkGhnMjGu3iqxzmhRbvmSwtzZoV1DsXmpL+JlswSpO8fhSUC9piXZgxn0Yh+BRYvy\njyB8fKVxTbYOaiMx5HjaR7h2x3FwEGGklvnGzixp5gT9i1w57JXJKSmJDW8ylLG4\nJKwDZEXMf25xj+Oc1dWmwV+jN3cNOeRG3Xw9ldBn+Ls=\n-----END CERTIFICATE-----"
+  },
+  "crls": {
+    "valid": "MIHGMG0CAQEwCgYIKoZIzj0EAwIwODELMAkGA1UEBhMCVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290GA8yMDAwMDEwMTAwMDAwMFoYDzIxMDAwMTAxMDAwMDAwWjAAMAoGCCqGSM49BAMCA0kAMEYCIQDHM+MN1M2b6Q+LqNBddsCpToaWLlPzwQYKuVkawhcpKwIhAO/gUHL3Bh7Ia8QqFxeVPMfc9+xRGkb4BF6jBfIc1sSH",
+    "unknownCritical": "MIHZMIGBAgEBMAoGCCqGSM49BAMCMDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdBgPMjAwMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowAKASMBAwDgYEKgMEBQEB/wQDAgEqMAoGCCqGSM49BAMCA0cAMEQCIHWyw6oBSiuB3CbDnsPJie7bKnaB+l7F+upUmfTsDnUYAiBt31MQX4axUNdUz5OaRYLlmbRHEthFSy2Xzifn1OSQHw==",
+    "unknownCriticalRevoked": "MIHwMIGXAgEBMAoGCCqGSM49BAMCMDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdBgPMjAwMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowFjAUAgECGA8yMDAwMDEwMTAwMDAwMFqgEjAQMA4GBCoDBAUBAf8EAwIBKjAKBggqhkjOPQQDAgNIADBFAiB5/5ILDJ6ab6oPvyBv4pV899HdtN9EbonawNu2L2Q07gIhAPgeZFb5dQ3/GqT9UVeG/QTBNTCitltWCPwWL+5ANxDS",
+    "unknownNoncritical": "MIHVMH4CAQEwCgYIKoZIzj0EAwIwODELMAkGA1UEBhMCVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290GA8yMDAwMDEwMTAwMDAwMFoYDzIxMDAwMTAxMDAwMDAwWjAAoA8wDTALBgQqAwQFBAMCASowCgYIKoZIzj0EAwIDRwAwRAIgJo+5f56l9T2bv3b4pOiRQaySbTHLc+s6IZYexL5rfEsCIGFX1BKLBnPZ+356KUxaW4itMij0jpbFaV8As5z7h4yM",
+    "knownCritical": "MIHZMIGAAgEBMAoGCCqGSM49BAMCMDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdBgPMjAwMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowAKARMA8wDQYDVR0UAQH/BAMCASowCgYIKoZIzj0EAwIDSAAwRQIhANh+7uHuRqUHxDffQkdznI1SJ9I+rWChTA50ApzhhnaVAiA2Zc6Tq2jwWXopDuhiIelHvofMK3rSpOY4AQjpZeSbag==",
+    "reorderedName": "MIHGMG0CAQEwCgYIKoZIzj0EAwIwODENMAsGA1UEAwwEUm9vdDEaMBgGA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxCzAJBgNVBAYTAlVTGA8yMDAwMDEwMTAwMDAwMFoYDzIxMDAwMTAxMDAwMDAwWjAAMAoGCCqGSM49BAMCA0kAMEYCIQCPRTuVTd3ipG1TDB0fxQWh9TMp0SrGpJGqhXIjrRIAJgIhAIx3DYfWI4KYXK2w8lJsrKRXNov+I6dojvkaTerbGgm4",
+    "normalizedName": "MIHoMIGPAgEBMAoGCCqGSM49BAMCMFoxEDAOBgNVBAYMB++7v3VzwqAxNzA1BgNVBAoeLgAgACAARQBYAEEATQBQAEwARQAgACAAIABBAFUAVABIAE8AUgBJAFQAWQAgACAxDTALBgNVBAMMBHJvb3QYDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMAAwCgYIKoZIzj0EAwIDSAAwRQIgZEn5pcuLnLDVYWH0t3wLUUJlPwcbNfmLLJcZLYm0SH8CIQCO2isnW9RsafT50A8aIc2PNZgLHApVXs+jiTjQ86Bcmw==",
+    "pssValid": "MIIB7zCBpAIBATBBBgkqhkiG9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUAoRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMCASAwODELMAkGA1UEBhMCVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290GA8yMDAwMDEwMTAwMDAwMFoYDzIxMDAwMTAxMDAwMDAwWjAAMEEGCSqGSIb3DQEBCjA0oA8wDQYJYIZIAWUDBAIBBQChHDAaBgkqhkiG9w0BAQgwDQYJYIZIAWUDBAIBBQCiAwIBIAOCAQEAcinFzRk5DBICs4k3vvKPAFIbx3WPZr3SGbER7tNlgxMQ3B4yldKks6raRkLBgNDR4Md/NM1XqzUumEWrjwM9fR0fRShXtrKOnSu+P1+JzE0cgnqI5WDrx9jCRunLSF6sRV7qE6K89kQI/rpXCKh6E2E/sA+30uLxPfbLm0Gq93rva0jiSV+6ni4KuKxFMql2jzgUrtjFYQnE1OJm+xNqSFYkAVYmk1EagHwWErhZ84EPSwK78ix43UQcsOH3tOc/udOXiboSmTraVvOUgV2ZlaWFUphyZDTCquMRcjo0igtXO/IWjyzJb3qd5X7YjRjuGef8075DWY4NZftZRewRbg==",
+    "pssOutOfOrder": "MIIB7zCBpAIBATBBBgkqhkiG9w0BAQowNKIDAgEgoRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAoA8wDQYJYIZIAWUDBAIBBQAwODELMAkGA1UEBhMCVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290GA8yMDAwMDEwMTAwMDAwMFoYDzIxMDAwMTAxMDAwMDAwWjAAMEEGCSqGSIb3DQEBCjA0ogMCASChHDAaBgkqhkiG9w0BAQgwDQYJYIZIAWUDBAIBBQCgDzANBglghkgBZQMEAgEFAAOCAQEAn3zC22wxZdngQZ9IjQqWZrCj4pVSDi+WECNrLuF+/voj52tPH9zx5cU5ukd60S1ycVsfuXOJTb1uBZyWZyu1cxBH42Cc0aqe89EO4EKl12PRMSZfSGKdJxVdBzXJasSADhhdmH3gM5mmHV6NZxQHGt4FegbbJU4V5qYVaI6PqdKeQkMsN/QwmYl5d8/2g18JcWxpBh6B7VNmwXkTmvDgKhqKSdhuFRPS+OHSiMuKmoQowRuhXyfZUQinNcE7dFwgGKxT7QOcQ5tVGs1qLvHMyTRi1ehtIAEO8kSHkDpkrqE2fl0v4hzQmVZKHlP60/71th3Vy3SHIBxo3pdAgu9tNg=="
+  },
+  "cases": [
+    {
+      "label": "reordered certificate issuer is rejected",
+      "input": "reorderedName",
+      "issuer": "issuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": false,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": false,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": [
+                "certificate_signature_verification_failed"
+              ]
+            }
+          ]
+        },
+        "untrustedReasons": [
+          "certificate_signature_verification_failed"
+        ]
+      }
+    },
+    {
+      "label": "normalized certificate issuer remains valid",
+      "input": "normalizedName",
+      "issuer": "issuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "Unicode collation softHyphen",
+      "input": "softHyphen",
+      "issuer": "issuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "Unicode collation variationSelector",
+      "input": "variationSelector",
+      "issuer": "issuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "Unicode collation graphemeJoiner",
+      "input": "graphemeJoiner",
+      "issuer": "issuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "Unicode collation wordJoiner",
+      "input": "wordJoiner",
+      "issuer": "issuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "Arabic stretch mark is ignored",
+      "input": "arabicLeaf",
+      "issuer": "arabicIssuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "هيئة الإصدار"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBkDCCATagAwIBAgIBCTAKBggqhkjOPQQDAjA+MQswCQYDVQQGEwJVUzEgMB4G\nA1UECgwX2YfZitim2Kkg2KfZhNil2LXYr9in2LExDTALBgNVBAMMBFJvb3QwIhgP\nMjAwMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowPjELMAkGA1UEBhMCVVMx\nIDAeBgNVBAoMF9mH2YrYptipINin2YTYpdi12K/Yp9ixMQ0wCwYDVQQDDARSb290\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS\n5K5puhFRkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8w\nDQYDVR0OBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUC\nICRMTcY0GSQSzfxBk9lDP4OQpUI26uAydNYaLjgNcYjHAiEA/Y/QltZGbXlRd5w9\npXf8VIoNrOu945L6ZsNY5c7fXQo=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "Hebrew cantillation mark is ignored",
+      "input": "hebrewLeaf",
+      "issuer": "hebrewIssuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "רשות"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBcTCCARigAwIBAgIBCjAKBggqhkjOPQQDAjAvMQswCQYDVQQGEwJVUzERMA8G\nA1UECgwI16jXqdeV16oxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAxMDEwMDAwMDBa\nGA8yMTAwMDEwMTAwMDAwMFowLzELMAkGA1UEBhMCVVMxETAPBgNVBAoMCNeo16nX\nldeqMQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP\n5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0p\nhGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAECAwQwDgYDVR0PAQH/BAQDAgEC\nMAoGCCqGSM49BAMCA0cAMEQCIGPaCmqlSs7uY1FMfbUdfsD3hfl6NjIgZvc53YPR\n1T89AiAW3bOWATXNo+Za1b0Gna6xs9OglnncUp5qkO2GMKUTmw==\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "UniversalString organization metadata",
+      "input": "leaf",
+      "issuer": "universalIssuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIB6jCCAZCgAwIBAgIBCzAKBggqhkjOPQQDAjBrMQswCQYDVQQGEwJVUzFNMEsG\nA1UEChxEAAAARQAAAHgAAABhAAAAbQAAAHAAAABsAAAAZQAAACAAAABBAAAAdQAA\nAHQAAABoAAAAbwAAAHIAAABpAAAAdAAAAHkxDTALBgNVBAMMBFJvb3QwIhgPMjAw\nMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowazELMAkGA1UEBhMCVVMxTTBL\nBgNVBAocRAAAAEUAAAB4AAAAYQAAAG0AAABwAAAAbAAAAGUAAAAgAAAAQQAAAHUA\nAAB0AAAAaAAAAG8AAAByAAAAaQAAAHQAAAB5MQ0wCwYDVQQDDARSb290MFkwEwYH\nKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFR\nkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0O\nBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIHbeGxOR\n4VqKlpnAUPt9AJCjgR0pyb7I/q/8+o5wljp0AiEA8HgqCA45J85ht1wxGfAa3ICj\nr2KKJa5NwzCXWyQuxmk=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "UniversalString non-ASCII metadata",
+      "input": "universalUnicodeLeaf",
+      "issuer": "universalUnicodeIssuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Autorité 🏛"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBuzCCAWCgAwIBAgIBDDAKBggqhkjOPQQDAjBTMQswCQYDVQQGEwJVUzE1MDMG\nA1UEChwsAAAAQQAAAHUAAAB0AAAAbwAAAHIAAABpAAAAdAAAAOkAAAAgAADYPAAA\n39sxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAxMDEwMDAwMDBaGA8yMTAwMDEwMTAw\nMDAwMFowUzELMAkGA1UEBhMCVVMxNTAzBgNVBAocLAAAAEEAAAB1AAAAdAAAAG8A\nAAByAAAAaQAAAHQAAADpAAAAIAAA2DwAAN/bMQ0wCwYDVQQDDARSb290MFkwEwYH\nKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFR\nkkLDPCLw8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0O\nBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0kAMEYCIQD+NMJA\nmRDNN89+xAxad01FUum19kldebWf8RXnu4kMJAIhAIqFBE41BhJaHvukJIQ7U/A+\nghVKLTY4dNrfmb1jwTH1\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "UniversalString common name and region metadata",
+      "input": "universalFallbackLeaf",
+      "issuer": "universalFallbackIssuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US",
+            "region": "VA"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIICCTCCAbCgAwIBAgIBDTAKBggqhkjOPQQDAjB7MQswCQYDVQQGEwJVUzEdMBsG\nA1UECBwUAAAAVQAAAFMAAAAtAAAAVgAAAEExTTBLBgNVBAMcRAAAAEUAAAB4AAAA\nYQAAAG0AAABwAAAAbAAAAGUAAAAgAAAAQQAAAHUAAAB0AAAAaAAAAG8AAAByAAAA\naQAAAHQAAAB5MCIYDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMHsx\nCzAJBgNVBAYTAlVTMR0wGwYDVQQIHBQAAABVAAAAUwAAAC0AAABWAAAAQTFNMEsG\nA1UEAxxEAAAARQAAAHgAAABhAAAAbQAAAHAAAABsAAAAZQAAACAAAABBAAAAdQAA\nAHQAAABoAAAAbwAAAHIAAABpAAAAdAAAAHkwWTATBgcqhkjOPQIBBggqhkjOPQMB\nBwNCAAQkXI/nCMmPq5oNyYeX5xATvJ6uCtLkrmm6EVGSQsM8IvDx9DsKmUosckMm\nwJ0AiI98XSmEZe+UQuNTbD1QF36voyEwHzANBgNVHQ4EBgQEAQIDBDAOBgNVHQ8B\nAf8EBAMCAQIwCgYIKoZIzj0EAwIDRwAwRAIgK5IhnbWOgNJHuj9f/f49F/9/TZkW\nlu5FomtlU4w94coCIAUCG1TUnWwm/LSPysFJyB/q9dHXsGynA/8YZt0qtCDZ\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "required unknown critical CRL",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "required",
+      "crl": "unknownCritical",
+      "expected": {
+        "trusted": false,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": false,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": [
+                "revocation_status_undetermined"
+              ]
+            }
+          ]
+        },
+        "untrustedReasons": [
+          "revocation_status_undetermined"
+        ]
+      }
+    },
+    {
+      "label": "required unknown critical revoked CRL",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "required",
+      "crl": "unknownCriticalRevoked",
+      "expected": {
+        "trusted": false,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": false,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": [
+                "revocation_status_undetermined"
+              ]
+            }
+          ]
+        },
+        "untrustedReasons": [
+          "revocation_status_undetermined"
+        ]
+      }
+    },
+    {
+      "label": "best_effort unknown critical CRL",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "best_effort",
+      "crl": "unknownCritical",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "best_effort unknown critical revoked CRL",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "best_effort",
+      "crl": "unknownCriticalRevoked",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "CRL valid",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "required",
+      "crl": "valid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_revoked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "CRL knownCritical",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "required",
+      "crl": "knownCritical",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_revoked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "CRL unknownNoncritical",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "required",
+      "crl": "unknownNoncritical",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_revoked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "CRL reorderedName",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "required",
+      "crl": "reorderedName",
+      "expected": {
+        "trusted": false,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": false,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": [
+                "revocation_status_undetermined"
+              ]
+            }
+          ]
+        },
+        "untrustedReasons": [
+          "revocation_status_undetermined"
+        ]
+      }
+    },
+    {
+      "label": "CRL normalizedName",
+      "input": "leaf",
+      "issuer": "issuer",
+      "mode": "required",
+      "crl": "normalizedName",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIBhDCCASqgAwIBAgIBATAKBggqhkjOPQQDAjA4MQswCQYDVQQGEwJVUzEaMBgG\nA1UECgwRRXhhbXBsZSBBdXRob3JpdHkxDTALBgNVBAMMBFJvb3QwIhgPMjAwMDAx\nMDEwMDAwMDBaGA8yMTAwMDEwMTAwMDAwMFowODELMAkGA1UEBhMCVVMxGjAYBgNV\nBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MFkwEwYHKoZIzj0C\nAQYIKoZIzj0DAQcDQgAEJFyP5wjJj6uaDcmHl+cQE7yergrS5K5puhFRkkLDPCLw\n8fQ7CplKLHJDJsCdAIiPfF0phGXvlELjU2w9UBd+r6MhMB8wDQYDVR0OBAYEBAEC\nAwQwDgYDVR0PAQH/BAQDAgECMAoGCCqGSM49BAMCA0gAMEUCIQClSMsl/nbrjqN7\nfLJYAI5uQjR2c9JDRRy0WXpCx5EdJgIgVpVR/G2nnE0DMNeE6O7xNybgFXRUP3cB\nWTzO/lHu1Hs=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_revoked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "ordered PSS certificate and CRL remain valid",
+      "input": "pssLeaf",
+      "issuer": "pssIssuer",
+      "mode": "required",
+      "crl": "pssValid",
+      "expected": {
+        "trusted": true,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIDeDCCAiygAwIBAgIBEjBBBgkqhkiG9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUA\noRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMCASAwODELMAkGA1UEBhMC\nVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MCIY\nDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMDgxCzAJBgNVBAYTAlVT\nMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdDCCASIw\nDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALcIiasL1t40PbYCuTXphvnithTz\neuoUk0SyY+TxH5TgymCWXtVxIsf2Wcdn2wjEPYsD2lbi+97EgmxIm8MaHMpCRtkW\nTSaQg0DPA/3Fcd7e+BGUJDJ0nw0PjysngqX5WpOXdo0mu6U7QZxUwfGktIkoUMqC\nDT7YVFisdVYokdQ1bH6b3E1PBViCFr1ZbMmOCBiSHoXQy806lEiGIcDxcpHABqLP\nmYUoRCtp9MDjFZ9w6eU1i6ezwX0VqgT5uExOSc9+Xjh4fPJ5uRJCNgpKH0kijMfG\njZTue43Ajyl9HCupmfYkqI1uGlssg+Pd8tQRdlNOdIH//9AMPA3aF00N/zECAwEA\nAaMhMB8wDQYDVR0OBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMEEGCSqGSIb3DQEB\nCjA0oA8wDQYJYIZIAWUDBAIBBQChHDAaBgkqhkiG9w0BAQgwDQYJYIZIAWUDBAIB\nBQCiAwIBIAOCAQEASe/GP+F8aDTaFOxLjddBHF8BzKmmL+JjsMD2cZbFTolvOpWN\nXuqaOFh9474RFpPvT0faG7A7j9bJq8hhf+WtjhVXvq1sPaZu/xvjzOwSZKPhaH7E\nrHF5de3lSbqOsZNKfz33/by0XgXCbAhZ8RDh3OkgH7fmhqrLBkyQUJuRVaswrCDS\nrrKmHcahExQs9tfZNfI03Z2jTHgrslRXtcLWZPC32fIlx5G+Tz/Uo9AKvUgpxbCF\noc3S6Cgj8Chym8IIOeEtgp/UInmzmbBy5QQA4zssuQCntunjcfLDyTfiledyT6mS\nnZ0vSUwvK0ADSMs9P+lRtHr/skk4kamLzj7ZQQ==\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": true,
+              "revocationStatus": "not_revoked",
+              "untrustedReasons": []
+            }
+          ]
+        },
+        "untrustedReasons": []
+      }
+    },
+    {
+      "label": "out-of-order PSS certificate is rejected",
+      "input": "pssOutOfOrder",
+      "issuer": "pssIssuer",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": false,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIDeDCCAiygAwIBAgIBEjBBBgkqhkiG9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUA\noRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMCASAwODELMAkGA1UEBhMC\nVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MCIY\nDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMDgxCzAJBgNVBAYTAlVT\nMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdDCCASIw\nDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALcIiasL1t40PbYCuTXphvnithTz\neuoUk0SyY+TxH5TgymCWXtVxIsf2Wcdn2wjEPYsD2lbi+97EgmxIm8MaHMpCRtkW\nTSaQg0DPA/3Fcd7e+BGUJDJ0nw0PjysngqX5WpOXdo0mu6U7QZxUwfGktIkoUMqC\nDT7YVFisdVYokdQ1bH6b3E1PBViCFr1ZbMmOCBiSHoXQy806lEiGIcDxcpHABqLP\nmYUoRCtp9MDjFZ9w6eU1i6ezwX0VqgT5uExOSc9+Xjh4fPJ5uRJCNgpKH0kijMfG\njZTue43Ajyl9HCupmfYkqI1uGlssg+Pd8tQRdlNOdIH//9AMPA3aF00N/zECAwEA\nAaMhMB8wDQYDVR0OBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMEEGCSqGSIb3DQEB\nCjA0oA8wDQYJYIZIAWUDBAIBBQChHDAaBgkqhkiG9w0BAQgwDQYJYIZIAWUDBAIB\nBQCiAwIBIAOCAQEASe/GP+F8aDTaFOxLjddBHF8BzKmmL+JjsMD2cZbFTolvOpWN\nXuqaOFh9474RFpPvT0faG7A7j9bJq8hhf+WtjhVXvq1sPaZu/xvjzOwSZKPhaH7E\nrHF5de3lSbqOsZNKfz33/by0XgXCbAhZ8RDh3OkgH7fmhqrLBkyQUJuRVaswrCDS\nrrKmHcahExQs9tfZNfI03Z2jTHgrslRXtcLWZPC32fIlx5G+Tz/Uo9AKvUgpxbCF\noc3S6Cgj8Chym8IIOeEtgp/UInmzmbBy5QQA4zssuQCntunjcfLDyTfiledyT6mS\nnZ0vSUwvK0ADSMs9P+lRtHr/skk4kamLzj7ZQQ==\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": false,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": [
+                "certificate_signature_verification_failed"
+              ]
+            }
+          ]
+        },
+        "untrustedReasons": [
+          "certificate_signature_verification_failed"
+        ]
+      }
+    },
+    {
+      "label": "out-of-order PSS CRL is undetermined",
+      "input": "pssLeaf",
+      "issuer": "pssIssuer",
+      "mode": "required",
+      "crl": "pssOutOfOrder",
+      "expected": {
+        "trusted": false,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIDeDCCAiygAwIBAgIBEjBBBgkqhkiG9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUA\noRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMCASAwODELMAkGA1UEBhMC\nVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MCIY\nDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMDgxCzAJBgNVBAYTAlVT\nMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdDCCASIw\nDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALcIiasL1t40PbYCuTXphvnithTz\neuoUk0SyY+TxH5TgymCWXtVxIsf2Wcdn2wjEPYsD2lbi+97EgmxIm8MaHMpCRtkW\nTSaQg0DPA/3Fcd7e+BGUJDJ0nw0PjysngqX5WpOXdo0mu6U7QZxUwfGktIkoUMqC\nDT7YVFisdVYokdQ1bH6b3E1PBViCFr1ZbMmOCBiSHoXQy806lEiGIcDxcpHABqLP\nmYUoRCtp9MDjFZ9w6eU1i6ezwX0VqgT5uExOSc9+Xjh4fPJ5uRJCNgpKH0kijMfG\njZTue43Ajyl9HCupmfYkqI1uGlssg+Pd8tQRdlNOdIH//9AMPA3aF00N/zECAwEA\nAaMhMB8wDQYDVR0OBAYEBAECAwQwDgYDVR0PAQH/BAQDAgECMEEGCSqGSIb3DQEB\nCjA0oA8wDQYJYIZIAWUDBAIBBQChHDAaBgkqhkiG9w0BAQgwDQYJYIZIAWUDBAIB\nBQCiAwIBIAOCAQEASe/GP+F8aDTaFOxLjddBHF8BzKmmL+JjsMD2cZbFTolvOpWN\nXuqaOFh9474RFpPvT0faG7A7j9bJq8hhf+WtjhVXvq1sPaZu/xvjzOwSZKPhaH7E\nrHF5de3lSbqOsZNKfz33/by0XgXCbAhZ8RDh3OkgH7fmhqrLBkyQUJuRVaswrCDS\nrrKmHcahExQs9tfZNfI03Z2jTHgrslRXtcLWZPC32fIlx5G+Tz/Uo9AKvUgpxbCF\noc3S6Cgj8Chym8IIOeEtgp/UInmzmbBy5QQA4zssuQCntunjcfLDyTfiledyT6mS\nnZ0vSUwvK0ADSMs9P+lRtHr/skk4kamLzj7ZQQ==\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": false,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": [
+                "revocation_status_undetermined"
+              ]
+            }
+          ]
+        },
+        "untrustedReasons": [
+          "revocation_status_undetermined"
+        ]
+      }
+    },
+    {
+      "label": "out-of-order PSS-only key is rejected",
+      "input": "pssLeaf",
+      "issuer": "pssKeyOutOfOrder",
+      "mode": "skip",
+      "crl": "valid",
+      "expected": {
+        "trusted": false,
+        "issuer": {
+          "issuer_id": "x509_aki:AQIDBA",
+          "entity_type": "other",
+          "entity_metadata": {
+            "country": "US"
+          },
+          "display": {
+            "name": "Example Authority"
+          },
+          "trust_scopes": [],
+          "certificates": [
+            {
+              "data": "-----BEGIN CERTIFICATE-----\nMIIDrDCCAmCgAwIBAgIBFDBBBgkqhkiG9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUA\noRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMCASAwODELMAkGA1UEBhMC\nVVMxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290MCIY\nDzIwMDAwMTAxMDAwMDAwWhgPMjEwMDAxMDEwMDAwMDBaMDgxCzAJBgNVBAYTAlVT\nMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdDCCAVYw\nQQYJKoZIhvcNAQEKMDSiAwIBIKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQMEAgEF\nAKAPMA0GCWCGSAFlAwQCAQUAA4IBDwAwggEKAoIBAQC3CImrC9beND22Ark16Yb5\n4rYU83rqFJNEsmPk8R+U4Mpgll7VcSLH9lnHZ9sIxD2LA9pW4vvexIJsSJvDGhzK\nQkbZFk0mkINAzwP9xXHe3vgRlCQydJ8ND48rJ4Kl+VqTl3aNJrulO0GcVMHxpLSJ\nKFDKgg0+2FRYrHVWKJHUNWx+m9xNTwVYgha9WWzJjggYkh6F0MvNOpRIhiHA8XKR\nwAaiz5mFKEQrafTA4xWfcOnlNYuns8F9FaoE+bhMTknPfl44eHzyebkSQjYKSh9J\nIozHxo2U7nuNwI8pfRwrqZn2JKiNbhpbLIPj3fLUEXZTTnSB///QDDwN2hdNDf8x\nAgMBAAGjITAfMA0GA1UdDgQGBAQBAgMEMA4GA1UdDwEB/wQEAwIBAjBBBgkqhkiG\n9w0BAQowNKAPMA0GCWCGSAFlAwQCAQUAoRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFl\nAwQCAQUAogMCASADggEBABTd70NbGhfoJfOtHzHvmNOV7ItgK12Y6IjILUU8LG+B\nHlK8a+keWlgF33QkceUcr2iQcSxN7ykKbGD2wJUzJx0IAhCbjh57y8KFp1A8hJSa\npelY1YnBXa4NzZZI5PO9KHc6xH1HGp6p53gGPXCgO/3VJuedyK3s41vaImZA+MHw\nkGhnMjGu3iqxzmhRbvmSwtzZoV1DsXmpL+JlswSpO8fhSUC9piXZgxn0Yh+BRYvy\njyB8fKVxTbYOaiMx5HjaR7h2x3FwEGGklvnGzixp5gT9i1w57JXJKSmJDW8ylLG4\nJKwDZEXMf25xj+Oc1dWmwV+jN3cNOeRG3Xw9ldBn+Ls=\n-----END CERTIFICATE-----",
+              "format": "pem",
+              "trust_lists": [
+                "user_provided"
+              ],
+              "trusted": false,
+              "revocationStatus": "not_checked",
+              "untrustedReasons": [
+                "certificate_signature_verification_failed"
+              ]
+            }
+          ]
+        },
+        "untrustedReasons": [
+          "certificate_signature_verification_failed"
+        ]
+      }
+    }
+  ],
+  "certificateSignatures": [
+    {
+      "input": "leaf",
+      "issuer": "issuer",
+      "expected": true
+    },
+    {
+      "input": "reorderedName",
+      "issuer": "issuer",
+      "expected": false
+    },
+    {
+      "input": "normalizedName",
+      "issuer": "issuer",
+      "expected": true
+    },
+    {
+      "input": "softHyphen",
+      "issuer": "issuer",
+      "expected": true
+    },
+    {
+      "input": "variationSelector",
+      "issuer": "issuer",
+      "expected": true
+    },
+    {
+      "input": "graphemeJoiner",
+      "issuer": "issuer",
+      "expected": true
+    },
+    {
+      "input": "wordJoiner",
+      "issuer": "issuer",
+      "expected": true
+    },
+    {
+      "input": "arabicLeaf",
+      "issuer": "arabicIssuer",
+      "expected": true
+    },
+    {
+      "input": "hebrewLeaf",
+      "issuer": "hebrewIssuer",
+      "expected": true
+    },
+    {
+      "input": "leaf",
+      "issuer": "universalIssuer",
+      "expected": true
+    },
+    {
+      "input": "universalUnicodeLeaf",
+      "issuer": "universalUnicodeIssuer",
+      "expected": true
+    },
+    {
+      "input": "universalFallbackLeaf",
+      "issuer": "universalFallbackIssuer",
+      "expected": true
+    },
+    {
+      "input": "pssLeaf",
+      "issuer": "pssIssuer",
+      "expected": true
+    },
+    {
+      "input": "pssOutOfOrder",
+      "issuer": "pssIssuer",
+      "expected": false
+    },
+    {
+      "input": "pssLeaf",
+      "issuer": "pssKeyOutOfOrder",
+      "expected": false
+    }
+  ],
+  "nameComparisons": [
+    {
+      "label": "ordered names",
+      "left": "MDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdA==",
+      "right": "MDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdA==",
+      "expected": true
+    },
+    {
+      "label": "reordered attributes",
+      "left": "MDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdA==",
+      "right": "MDgxDTALBgNVBAMMBFJvb3QxGjAYBgNVBAoMEUV4YW1wbGUgQXV0aG9yaXR5MQswCQYDVQQGEwJVUw==",
+      "expected": false
+    },
+    {
+      "label": "case whitespace and string encoding",
+      "left": "MDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdA==",
+      "right": "MFoxEDAOBgNVBAYMB++7v3VzwqAxNzA1BgNVBAoeLgAgACAARQBYAEEATQBQAEwARQAgACAAIABBAFUAVABIAE8AUgBJAFQAWQAgACAxDTALBgNVBAMMBHJvb3Q=",
+      "expected": true
+    },
+    {
+      "label": "grouping is flattened",
+      "left": "MCkxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eQ==",
+      "right": "MCcxJTAJBgNVBAYTAlVTMBgGA1UECgwRRXhhbXBsZSBBdXRob3JpdHk=",
+      "expected": true
+    },
+    {
+      "label": "canonical Unicode",
+      "left": "MA0xCzAJBgNVBAMMAsOp",
+      "right": "MA4xDDAKBgNVBAMMA2XMgQ==",
+      "expected": true
+    },
+    {
+      "label": "different Unicode",
+      "left": "MA0xCzAJBgNVBAMMAsOp",
+      "right": "MAwxCjAIBgNVBAMMAWU=",
+      "expected": false
+    },
+    {
+      "label": "UniversalString text",
+      "left": "MC8xLTArBgNVBAMcJAAAAEEAAAB1AAAAdAAAAGgAAABvAAAAcgAAAGkAAAB0AAAAeQ==",
+      "right": "MBQxEjAQBgNVBAMMCWF1dGhvcml0eQ==",
+      "expected": true
+    },
+    {
+      "label": "Unicode collation softHyphen",
+      "left": "MDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdA==",
+      "right": "MDoxCzAJBgNVBAYTAlVTMRwwGgYDVQQKDBNFeGFtcGxlIEF1dGhvcml0ecKtMQ0wCwYDVQQDDARSb290",
+      "expected": true
+    },
+    {
+      "label": "Unicode collation variationSelector",
+      "left": "MDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdA==",
+      "right": "MDsxCzAJBgNVBAYTAlVTMR0wGwYDVQQKDBRFeGFtcGxlIEF1dGhvcml0ee+4jzENMAsGA1UEAwwEUm9vdA==",
+      "expected": true
+    },
+    {
+      "label": "Unicode collation graphemeJoiner",
+      "left": "MDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdA==",
+      "right": "MDoxCzAJBgNVBAYTAlVTMRwwGgYDVQQKDBNFeGFtzY9wbGUgQXV0aG9yaXR5MQ0wCwYDVQQDDARSb290",
+      "expected": true
+    },
+    {
+      "label": "Unicode collation wordJoiner",
+      "left": "MDgxCzAJBgNVBAYTAlVTMRowGAYDVQQKDBFFeGFtcGxlIEF1dGhvcml0eTENMAsGA1UEAwwEUm9vdA==",
+      "right": "MDsxCzAJBgNVBAYTAlVTMR0wGwYDVQQKDBRFeGFtcGxlIEF1dGhvcml0eeKBoDENMAsGA1UEAwwEUm9vdA==",
+      "expected": true
+    },
+    {
+      "label": "Arabic stretch mark",
+      "left": "MD4xCzAJBgNVBAYTAlVTMSAwHgYDVQQKDBfZh9mK2KbYqSDYp9mE2KXYtdiv2KfYsTENMAsGA1UEAwwEUm9vdA==",
+      "right": "MEAxCzAJBgNVBAYTAlVTMSIwIAYDVQQKDBnZh9mA2YrYptipINin2YTYpdi12K/Yp9ixMQ0wCwYDVQQDDARSb290",
+      "expected": true
+    },
+    {
+      "label": "Hebrew cantillation mark",
+      "left": "MC8xCzAJBgNVBAYTAlVTMREwDwYDVQQKDAjXqNep15XXqjENMAsGA1UEAwwEUm9vdA==",
+      "right": "MDExCzAJBgNVBAYTAlVTMRMwEQYDVQQKDArXqNaR16nXldeqMQ0wCwYDVQQDDARSb290",
+      "expected": true
+    },
+    {
+      "label": "fullwidth text remains distinct",
+      "left": "MAwxCjAIBgNVBAMMAWE=",
+      "right": "MA4xDDAKBgNVBAMMA++9gQ==",
+      "expected": false
+    },
+    {
+      "label": "punctuation remains distinct",
+      "left": "MA0xCzAJBgNVBAMMAmFi",
+      "right": "MA4xDDAKBgNVBAMMA2EtYg==",
+      "expected": false
+    },
+    {
+      "label": "nonstring attributes",
+      "left": "MA0xCzAJBgMqAwQEAgEC",
+      "right": "MA0xCzAJBgMqAwQEAgEC",
+      "expected": true
+    },
+    {
+      "label": "string and nonstring differ",
+      "left": "MBQxEjAQBgMqAwQMCUF1dGhvcml0eQ==",
+      "right": "MBQxEjAQBgMqAwQECUF1dGhvcml0eQ==",
+      "expected": false
+    }
+  ]
+}

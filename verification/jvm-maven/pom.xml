@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.universalverify.verification</groupId>
+  <artifactId>maven-consumer</artifactId>
+  <version>1.0</version>
+  <properties><maven.compiler.release>17</maven.compiler.release><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties>
+  <repositories><repository><id>sdk-verification</id><url>file://${project.basedir}/../../build/repository</url></repository></repositories>
+  <dependencies><dependency><groupId>com.universalverify</groupId><artifactId>trusted-issuer-registry</artifactId><version>0.1.0</version></dependency></dependencies>
+  <build>
+    <sourceDirectory>../shared/src/main/java</sourceDirectory>
+    <resources><resource><directory>../shared/src/main/resources</directory></resource></resources>
+    <plugins>
+      <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.14.1</version></plugin>
+      <plugin><groupId>org.codehaus.mojo</groupId><artifactId>exec-maven-plugin</artifactId><version>3.6.1</version>
+        <configuration><mainClass>com.universalverify.consumer.Smoke</mainClass><cleanupDaemonThreads>false</cleanupDaemonThreads></configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
