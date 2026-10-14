@@ -36,3 +36,5 @@ local.properties
 .android-avd/
 .android-state/
 **/target/
+
+__pycache__/

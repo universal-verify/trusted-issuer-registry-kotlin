@@ -1,0 +1,48 @@
+name: Publish Maven Central
+on:
+  release:
+    types: [published]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: maven-central-${{ github.event.release.tag_name }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: '${{ github.sha }}'
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-disabled: true
+      - name: Generate publication metadata
+        run: ./gradlew --no-daemon --no-configuration-cache generatePomFileForMavenPublication
+      - name: Verify release version and successful SDK checks
+        env:
+          GITHUB_TOKEN: '${{ github.token }}'
+        run: python3 .github/scripts/release.py verify
+      - name: Build signed publication
+        env:
+          SIGNING_KEY: '${{ secrets.SIGNING_KEY }}'
+          SIGNING_PASSWORD: '${{ secrets.SIGNING_PASSWORD }}'
+        run: ./gradlew --no-daemon --no-configuration-cache clean check bundleForCentral
+      - name: Save signed publication bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: maven-central-${{ github.event.release.tag_name }}-${{ github.run_attempt }}
+          path: build/central/*-central.zip
+          if-no-files-found: error
+      - name: Publish to Maven Central
+        env:
+          CENTRAL_USERNAME: '${{ secrets.CENTRAL_USERNAME }}'
+          CENTRAL_PASSWORD: '${{ secrets.CENTRAL_PASSWORD }}'
+        run: python3 .github/scripts/release.py publish
