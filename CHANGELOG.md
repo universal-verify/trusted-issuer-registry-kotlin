@@ -2,7 +2,7 @@
 
 SDK releases are versioned independently of registry data releases.
 
-## 0.2.0 (Unreleased)
+## 0.2.0
 
 - Added `RegistrySnapshot.fromJson`, `RegistryOptions.registrySnapshot`, and a Java builder method for offline signed registry lookups using the JS registry's snapshot format.
 - Snapshots retain registry trust lists/scopes, user-certificate merging, and optional CRL checks. Snapshot mode skips registry/deprecation requests, returns null for end-of-life dates, and never falls back to the CDN.
