@@ -2,6 +2,8 @@
 
 Use Java 17+ to run the wrapper. The SDK is compiled with a Java 17 toolchain; install one even when testing newer runtimes.
 
+For runtime changes and upstream updates, follow [MAINTAINERS.md](MAINTAINERS.md). It records the last reviewed JS commit separately from fixture provenance and describes the parity checks required for each JS release.
+
 ```sh
 ./gradlew check
 ./gradlew ktlintFormat
@@ -20,7 +22,7 @@ Name matching follows PKIjs's ordered, flattened attribute comparisons and strin
 
 Use ICU collation for name comparisons; the JDK collator disagrees with JavaScript for ignored Unicode characters. The internal adapter selects Android's built-in ICU or the JVM-only ICU4J dependency using their shared API. Each operation creates its own mutable collator. Keep ICU4J out of Android variants, and check signed Unicode name fixtures on both platforms. Decode UniversalString subject attributes as UCS-4 text before deriving issuer metadata; Bouncy Castle's string accessor returns DER hex for that type.
 
-Tests use static JS-generated fixtures and fixed clocks. The fixture README records the source commit. To deliberately regenerate them, install dependencies in the sibling JS checkout and run `node test-support/generate-fixtures.mjs` or `node test-support/generate-validation-fixtures.mjs` for the validation regressions; ordinary builds and CI do not require JS or network registry access.
+Tests use static JS-generated fixtures and fixed clocks. The fixture README records the source commit. To deliberately regenerate them, install dependencies in the sibling JS checkout and run `node test-support/generate-fixtures.mjs`, `node test-support/generate-validation-fixtures.mjs` for validation regressions, or `node test-support/generate-snapshot-fixtures.mjs` for snapshot behavior; ordinary builds and CI do not require JS or network registry access.
 
 Run newer runtime tests with installed JDK/JRE toolchain paths:
 

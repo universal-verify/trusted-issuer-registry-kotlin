@@ -10,7 +10,9 @@ import java.time.Instant
 internal suspend fun getRegistryIssuer(
     aki: String,
     fetcher: CachedFetcher,
+    snapshotSource: RegistrySnapshotSource? = null,
 ): Issuer? {
+    if (snapshotSource != null) return snapshotSource.get(aki)
     val url =
         REGISTRY_URL_BASE
             .toHttpUrl()
@@ -38,6 +40,7 @@ internal suspend fun resolveTrust(
     fetcher: CachedFetcher,
     revocationMode: RevocationCheckMode,
     clock: Clock,
+    snapshotSource: RegistrySnapshotSource? = null,
 ): CertificateTrustResult {
     if (certificate == null) return CertificateTrustResult(false, untrustedReasons = freeze(listOf(UntrustedReason.CERTIFICATE_MISSING)))
     val aki =
@@ -51,7 +54,7 @@ internal suspend fun resolveTrust(
     val registry =
         if (options.trustLists.isNotEmpty()) {
             try {
-                getRegistryIssuer(aki, fetcher)
+                getRegistryIssuer(aki, fetcher, snapshotSource)
             } catch (error: CancellationException) {
                 throw error
             } catch (_: Exception) {

@@ -46,7 +46,7 @@ android {
 }
 
 if (!providers.gradleProperty("withoutSdk").isPresent) {
-    dependencies { implementation("com.universalverify:trusted-issuer-registry:0.1.0") }
+    dependencies { implementation("com.universalverify:trusted-issuer-registry:0.2.0") }
 }
 dependencyLocking { lockAllConfigurations() }
 

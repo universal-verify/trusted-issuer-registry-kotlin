@@ -17,10 +17,12 @@ Use a [Central Portal user token](https://central.sonatype.org/publish/generate-
 
 ## Publish a release
 
+Review upstream runtime changes using [MAINTAINERS.md](MAINTAINERS.md), record the reviewed JS commit, and confirm that new behavior has fixed parity fixtures before preparing an SDK release.
+
 1. Update the SDK version in `build.gradle.kts`, its consumer fixtures, installation examples, and `CHANGELOG.md`.
-2. Commit and push the release changes. For the first release, include `.github/workflows/release.yml` and `.github/scripts/` in that commit.
+2. Commit and push the release changes.
 3. Wait for **SDK checks** to pass on the commit you will release. This includes Java 17/21/25, published-artifact Gradle/Maven consumers, and the minified Android tests on API 26 and API 37.2. Review ABI changes and the dependency-size measurement.
-4. Tag that commit with the SDK version, such as `0.1.0`, and publish its GitHub release.
+4. Tag that commit with the SDK version, such as `0.2.0`, and publish its GitHub release.
 5. Follow the **Publish Maven Central** workflow in Actions until it succeeds.
 
 Publishing a GitHub release triggers publication; pushing a tag, saving a draft, or editing release notes does not. The tag must match the generated SDK version. An optional `v` prefix is accepted. Published prereleases such as `0.2.0-rc.1` also publish that exact SDK version to Central; snapshot versions are rejected.

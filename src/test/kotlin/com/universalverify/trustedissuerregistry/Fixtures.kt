@@ -45,17 +45,20 @@ internal object Fixtures {
 
     inline fun <reified T> wire(value: String): T where T : Enum<T>, T : WireValue = enumValues<T>().first { it.wireValue == value }
 
-    fun options(scenario: JsonObject): RegistryOptions {
+    fun options(
+        scenario: JsonObject,
+        certificatePem: (String) -> String = ::pem,
+    ): RegistryOptions {
         val custom =
             scenario.getValue("custom").jsonArray.map { entry ->
                 if (entry is JsonPrimitive) {
-                    UserTrustedIssuerCertificate(pem(entry.content))
+                    UserTrustedIssuerCertificate(certificatePem(entry.content))
                 } else {
                     val value = entry.jsonObject
                     val metadata = value["entity_metadata"]?.jsonObject
                     val display = value["display"]?.jsonObject
                     UserTrustedIssuerCertificate(
-                        pem(value.getValue("data").jsonPrimitive.content),
+                        certificatePem(value.getValue("data").jsonPrimitive.content),
                         trustScopes = value["trust_scopes"]?.jsonArray?.map { wire<TrustScope>(it.jsonPrimitive.content) }.orEmpty(),
                         entityType = value["entity_type"]?.jsonPrimitive?.content?.let { wire<EntityType>(it) } ?: EntityType.OTHER,
                         entityMetadata =

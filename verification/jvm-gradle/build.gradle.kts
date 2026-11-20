@@ -5,7 +5,7 @@ plugins {
 
 kotlin { jvmToolchain(17) }
 dependencies {
-    implementation("com.universalverify:trusted-issuer-registry:0.1.0")
+    implementation("com.universalverify:trusted-issuer-registry:0.2.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
 }
 application { mainClass.set("com.universalverify.consumer.Smoke") }

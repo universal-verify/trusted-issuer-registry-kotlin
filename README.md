@@ -15,7 +15,7 @@ The [Trusted Issuer Registry](https://github.com/universal-verify/trusted-issuer
 
 Issuer records contain certificates, source trust lists, trust scopes, and display metadata. Records are cryptographically signed and distributed through jsDelivr. This library verifies their signatures before using them.
 
-Lookups use the latest published patch of registry version `0.2`, so issuer updates do not require a Kotlin SDK upgrade, subject to the library's cache and [CDN caching](https://github.com/jsdelivr/jsdelivr#caching).
+By default, lookups use the latest published patch of registry version `0.2`, so issuer updates do not require a Kotlin SDK upgrade, subject to the library's cache and [CDN caching](https://github.com/jsdelivr/jsdelivr#caching). Supply a `registrySnapshot` to use a fixed set of signed registry issuers offline instead.
 
 ## Trust Model
 
@@ -39,7 +39,7 @@ Add the SDK to a Gradle project:
 repositories { mavenCentral() }
 
 dependencies {
-    implementation("com.universalverify:trusted-issuer-registry:0.1.0")
+    implementation("com.universalverify:trusted-issuer-registry:0.2.0")
 }
 ```
 
@@ -49,11 +49,11 @@ Or with Maven:
 <dependency>
   <groupId>com.universalverify</groupId>
   <artifactId>trusted-issuer-registry</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
 </dependency>
 ```
 
-The examples target SDK `0.1.0`; Maven Central publication is a separate [release step](RELEASING.md).
+The examples target SDK `0.2.0`; Maven Central publication is a separate [release step](RELEASING.md).
 
 Resolve trust for a PEM certificate from an existing Kotlin coroutine:
 
@@ -150,8 +150,34 @@ Creates a thread-safe client. Kotlin callers use default arguments; Java callers
 | `timeout` | `java.time.Duration` | `Duration.ofSeconds(10)` | Per-caller download deadline, including the response body |
 | `cacheEnabled` | `Boolean` | `true` | Cache issuer, deprecation, and CRL responses in memory |
 | `cacheTtl` | `java.time.Duration` | `Duration.ofHours(24)` | Maximum cache lifetime |
+| `registrySnapshot` | `RegistrySnapshot?` | `null` | Signed registry snapshot replacing live registry and deprecation lookups |
 
 Timeout must be positive; cache lifetime must be nonnegative. Zero TTL retains no responses. The timeout applies to each issuer, deprecation, or CRL download, not the entire trust resolution.
+
+**Offline registry snapshots:**
+
+The JS registry publishes `build/registry.json`, containing an optional informational `version` string and an `issuers` array of signed records. Download a specific release, such as [registry 0.2.4](https://cdn.jsdelivr.net/npm/trusted-issuer-registry@0.2.4/build/registry.json), and bundle the unchanged JSON with your application. Load it from resources, Android assets, or your application's storage and pass its text to `RegistrySnapshot.fromJson`:
+
+```kotlin
+val snapshot = RegistrySnapshot.fromJson(snapshotJson)
+val registry = Registry(RegistryOptions(registrySnapshot = snapshot))
+val result = registry.resolveCertificateTrust(
+    certificatePem,
+    ResolveCertificateTrustOptions(trustLists = listOf(TrustList.UV)),
+)
+```
+
+Java callers use the same factory and options builder:
+
+```java
+RegistryOptions options = RegistryOptions.builder()
+    .registrySnapshot(RegistrySnapshot.fromJson(snapshotJson))
+    .build();
+```
+
+Snapshots retain registry trust lists and scopes; select accepted lists explicitly as with live lookups. User-provided issuer certificates still merge normally. A supplied snapshot, including an empty one, disables registry and deprecation requests completely. Missing issuers and invalid signatures never trigger CDN fallback. Configured CRL checks can still make network requests; use `SKIP` for fully offline operation.
+
+`fromJson` throws `IllegalArgumentException` for malformed JSON, invalid entry structure, or duplicate issuer IDs. It preserves unknown signed fields and records without certificates. Each registry verifies an issuer's signature on first use and shares that verification across callers, independently of HTTP caching. Invalid snapshot signatures throw `RegistryException` with category `CRYPTOGRAPHIC_ERROR` for direct lookups; trust resolution retains its normal local-certificate fallback and failure reasons. Snapshot `version` is informational and does not change `Registry.minorVersion`. The snapshot remains fixed until your application replaces it; signatures authenticate records, not the snapshot's freshness or completeness.
 
 **User-provided issuers:**
 
@@ -271,11 +297,11 @@ Looks up issuer metadata without evaluating certificate trust.
 val issuer = registry.getIssuerFromX509AKI("TprRzaFBJ1SLjJsO01tlLCQ4YF0")
 ```
 
-The registry is always checked, using cached data when available, even with a matching user issuer. A 404 still permits user issuer data to be returned. Other request failures throw. Merge precedence and ordering follow `resolveCertificateTrust`. Unmerged registry results retain their signature; merged results omit it. This method does not add per-certificate trust results.
+The configured source (snapshot or live registry) is always checked, even with a matching user issuer. Live lookups use cached data when available. A 404 or missing snapshot entry still permits user issuer data to be returned. Request failures and invalid snapshot signatures throw. Merge precedence and ordering follow `resolveCertificateTrust`. Unmerged registry results retain their signature; merged results omit it. This method does not add per-certificate trust results.
 
 #### `getEndOfLifeDate()`
 
-Retrieves the applicable registry deprecation notice. Returns `java.time.Instant?`, null for a 404 or when no applicable notice exists. Request failures and malformed responses throw.
+Retrieves the applicable registry deprecation notice. Returns `java.time.Instant?`, null for a 404 or when no applicable notice exists. Snapshot mode returns null without making a request. Request failures and malformed responses throw.
 
 ```kotlin
 val endOfLife = registry.getEndOfLifeDate()
@@ -453,6 +479,7 @@ Issuer records can also be inspected directly:
 ```sh
 curl https://cdn.jsdelivr.net/npm/trusted-issuer-registry@0.2/issuers/x509_aki/TprRzaFBJ1SLjJsO01tlLCQ4YF0.json
 curl https://cdn.jsdelivr.net/npm/trusted-issuer-registry@0.2/deprecation_notice.json
+curl https://cdn.jsdelivr.net/npm/trusted-issuer-registry@0.2/build/registry.json
 ```
 
 The issuer URL format is `https://cdn.jsdelivr.net/npm/trusted-issuer-registry@{minor_version}/issuers/x509_aki/{x509aki}.json`. Direct issuer responses require signature verification before use; `Registry` performs it automatically.
@@ -461,7 +488,7 @@ The issuer URL format is `https://cdn.jsdelivr.net/npm/trusted-issuer-registry@{
 
 See [CHANGELOG.md](CHANGELOG.md) for SDK release notes.
 
-Kotlin SDK releases are independent of registry-data releases. SDK `0.1.0` uses registry minor version `0.2`. Registry patch releases update issuer data; registry minor releases may change the schema or trust protocol. Older registry lines receive updates until their announced end-of-life date, with deprecation notices published 90 days in advance. Use `getEndOfLifeDate()` to check the version used by the client.
+Kotlin SDK releases are independent of registry-data releases. SDK `0.2.0` uses registry minor version `0.2`. Registry patch releases update issuer data; registry minor releases may change the schema or trust protocol. Older registry lines receive updates until their announced end-of-life date, with deprecation notices published 90 days in advance. Use `getEndOfLifeDate()` to check a live client's version; snapshot mode skips this check.
 
 Deprecation notices are unsigned and use Unix seconds. An example for an older registry line:
 
@@ -488,7 +515,7 @@ Use suspend/future APIs, or call blocking methods from a worker thread. Registry
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development, tests, and API compatibility checks, [VERIFICATION.md](VERIFICATION.md) for verified platform behavior, and [RELEASING.md](RELEASING.md) for publication instructions. Changes to registry trust policies are discussed in the [registry repository](https://github.com/universal-verify/trusted-issuer-registry).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development, tests, and API compatibility checks, [MAINTAINERS.md](MAINTAINERS.md) for upstream feature-parity reviews, [VERIFICATION.md](VERIFICATION.md) for verified platform behavior, and [RELEASING.md](RELEASING.md) for publication instructions. Changes to registry trust policies are discussed in the [registry repository](https://github.com/universal-verify/trusted-issuer-registry).
 
 ## License
 

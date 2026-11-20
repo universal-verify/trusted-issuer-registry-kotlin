@@ -12,6 +12,7 @@ public data class RegistryOptions
         public val timeout: Duration = Duration.ofSeconds(10),
         public val cacheEnabled: Boolean = true,
         public val cacheTtl: Duration = Duration.ofHours(24),
+        public val registrySnapshot: RegistrySnapshot? = null,
     ) {
         init {
             require(!timeout.isZero && !timeout.isNegative) { "timeout must be positive" }
@@ -35,6 +36,7 @@ public data class RegistryOptions
             private var timeout = Duration.ofSeconds(10)
             private var caching = true
             private var ttl = Duration.ofHours(24)
+            private var snapshot: RegistrySnapshot? = null
 
             public fun addTrustedIssuerCertificate(pem: String): Builder = addTrustedIssuerCertificate(UserTrustedIssuerCertificate(pem))
 
@@ -51,7 +53,10 @@ public data class RegistryOptions
 
             public fun cacheTtl(ttl: Duration): Builder = apply { this.ttl = ttl }
 
-            public fun build(): RegistryOptions = RegistryOptions(freeze(certificates), revocation, timeout, caching, ttl)
+            /** Replaces live registry/deprecation lookups; null restores the default live source. */
+            public fun registrySnapshot(snapshot: RegistrySnapshot?): Builder = apply { this.snapshot = snapshot }
+
+            public fun build(): RegistryOptions = RegistryOptions(freeze(certificates), revocation, timeout, caching, ttl, snapshot)
         }
     }
 

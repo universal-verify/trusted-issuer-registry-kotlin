@@ -92,6 +92,13 @@ internal fun decodeVerifiedIssuer(
         } catch (error: Exception) {
             throw RegistryException(RegistryErrorCategory.MALFORMED_RESPONSE, "Malformed issuer JSON", error)
         }
+    return decodeVerifiedIssuer(objectValue, signingCertificate)
+}
+
+internal fun decodeVerifiedIssuer(
+    objectValue: JsonObject,
+    signingCertificate: String = PUBLIC_SIGNING_CERT,
+): Issuer? {
     val verified =
         runCatching {
             val signature = objectValue["signature"]?.jsonPrimitive?.content ?: return@runCatching false

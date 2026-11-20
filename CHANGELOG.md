@@ -2,6 +2,12 @@
 
 SDK releases are versioned independently of registry data releases.
 
+## 0.2.0 (Unreleased)
+
+- Added `RegistrySnapshot.fromJson`, `RegistryOptions.registrySnapshot`, and a Java builder method for offline signed registry lookups using the JS registry's snapshot format.
+- Snapshots retain registry trust lists/scopes, user-certificate merging, and optional CRL checks. Snapshot mode skips registry/deprecation requests, returns null for end-of-life dates, and never falls back to the CDN.
+- Upgrading Kotlin consumers should recompile: adding the snapshot option changes `RegistryOptions`' generated constructor and copy signatures. Registry protocol version remains `0.2`.
+
 ## 0.1.0
 
 Initial Kotlin and Java SDK, supporting Java 17+ servers and Android API 26+.

@@ -40,6 +40,7 @@ public class Registry private constructor(
     private val client = suppliedClient ?: OkHttpClient()
     private val ownsClient = suppliedClient == null
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+    private val snapshotSource = this.options.registrySnapshot?.let { RegistrySnapshotSource(it, scope, signingCertificate) }
     private val fetcher = CachedFetcher(this.options, client, scope, clock, signingCertificate)
     private val closed = AtomicBoolean()
 
@@ -66,10 +67,11 @@ public class Registry private constructor(
         }
     }
 
-    /** Fetches an applicable unsigned deprecation notice, or returns null on 404/older version. */
+    /** Returns null in snapshot mode; otherwise fetches an applicable unsigned deprecation notice. */
     @JvmSynthetic
     public suspend fun getEndOfLifeDate(): Instant? =
         operation {
+            if (snapshotSource != null) return@operation null
             val response = fetcher.fetch("$REGISTRY_URL_BASE/deprecation_notice.json", FetchPurpose.DEPRECATION)
             if (response.status == 404) return@operation null
             if (!response.ok) {
@@ -95,11 +97,11 @@ public class Registry private constructor(
             }
         }
 
-    /** Always checks the registry and merges a matching local issuer. [x509aki] excludes its prefix. */
+    /** Checks the configured snapshot or live registry and merges a local issuer. [x509aki] excludes its prefix. */
     @JvmSynthetic
     public suspend fun getIssuerFromX509AKI(x509aki: String): Issuer? =
         operation {
-            val registry = getRegistryIssuer(x509aki, fetcher)
+            val registry = getRegistryIssuer(x509aki, fetcher, snapshotSource)
             users[x509aki]?.let { mergeIssuers(it, registry) } ?: registry
         }
 
@@ -121,6 +123,7 @@ public class Registry private constructor(
                 fetcher,
                 this.options.revocationCheckMode,
                 clock,
+                snapshotSource,
             )
         }
     }
@@ -133,7 +136,7 @@ public class Registry private constructor(
     ): CertificateTrustResult {
         val parsed = parseCertificate(certificate)
         val snapshot = options.copy(trustLists = freeze(options.trustLists))
-        return operation { resolveTrust(parsed, snapshot, users, fetcher, this.options.revocationCheckMode, clock) }
+        return operation { resolveTrust(parsed, snapshot, users, fetcher, this.options.revocationCheckMode, clock, snapshotSource) }
     }
 
     /** Blocking Java facade. Call from a worker thread on Android. */
@@ -185,6 +188,7 @@ public class Registry private constructor(
     /** Cancels operations and clears caches, leaving an application-supplied HTTP client open. */
     override fun close() {
         if (closed.compareAndSet(false, true)) {
+            snapshotSource?.close()
             fetcher.close()
             scope.cancel()
             if (ownsClient) {

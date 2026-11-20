@@ -9,6 +9,8 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import okhttp3.*;
 
 /** Exercises the published artifact from Java, using public fixture data and no network. */
@@ -55,6 +57,40 @@ public final class Smoke {
             require(!client.dispatcher().executorService().isShutdown());
             client.dispatcher().executorService().shutdown();
             client.connectionPool().evictAll();
+        }
+        RegistrySnapshot snapshot = RegistrySnapshot.fromJson("{\"version\":\"informational\",\"issuers\":[" + registryJson + "]}");
+        Matcher identifier = Pattern.compile("\"issuer_id\"\\s*:\\s*\"x509_aki:([A-Za-z0-9_-]+)\"").matcher(registryJson);
+        require(identifier.find());
+        String aki = identifier.group(1);
+        OkHttpClient offline = new OkHttpClient.Builder().addInterceptor(chain -> {
+            throw new AssertionError("Snapshot attempted a network request: " + chain.request().url());
+        }).build();
+        try (Registry registry = new Registry(RegistryOptions.builder().registrySnapshot(snapshot)
+                .addTrustedIssuerCertificate(issuer).cacheEnabled(false).build(), offline)) {
+            require("informational".equals(snapshot.getVersion()));
+            require(registry.getIssuerFromX509AKIBlocking(aki).getSignature() != null);
+            require(registry.getIssuerFromX509AKIAsync(aki).get().getSignature() != null);
+            require(registry.getIssuerFromX509AKIBlocking("missing") == null);
+            require(registry.getEndOfLifeDateBlocking() == null);
+            require(registry.getEndOfLifeDateAsync().get() == null);
+            require(registry.resolveCertificateTrustBlocking(leaf,
+                    ResolveCertificateTrustOptions.builder().addTrustList(TrustList.UV).build()).getTrusted());
+            require(registry.resolveCertificateTrustAsync(leaf).get().getTrusted());
+            String tampered = registryJson.replaceFirst("\"entity_type\"", "\"tampered_entity_type\"");
+            RegistrySnapshot invalid = RegistrySnapshot.fromJson("{\"issuers\":[" + tampered + "]}");
+            try (Registry rejected = new Registry(RegistryOptions.builder().registrySnapshot(invalid).build(), offline)) {
+                try {
+                    rejected.getIssuerFromX509AKIAsync(aki).get();
+                    throw new AssertionError("Tampered snapshot signature was accepted");
+                } catch (java.util.concurrent.ExecutionException error) {
+                    require(error.getCause() instanceof RegistryException);
+                    require(((RegistryException) error.getCause()).getCategory() == RegistryErrorCategory.CRYPTOGRAPHIC_ERROR);
+                }
+            }
+        } finally {
+            require(!offline.dispatcher().executorService().isShutdown());
+            offline.dispatcher().executorService().shutdown();
+            offline.connectionPool().evictAll();
         }
         require(providers.equals(Arrays.asList(Arrays.stream(Security.getProviders()).map(p -> p.getName()).toArray(String[]::new))));
         System.out.println("Published Java consumer passed");

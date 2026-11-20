@@ -322,18 +322,21 @@ public final class com/universalverify/trustedissuerregistry/RegistryOptions {
 	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;)V
 	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;Z)V
 	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;)V
-	public synthetic fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;)V
+	public synthetic fun <init> (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public static final fun builder ()Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
 	public final fun component1 ()Ljava/util/List;
 	public final fun component2 ()Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
 	public final fun component3 ()Ljava/time/Duration;
 	public final fun component4 ()Z
 	public final fun component5 ()Ljava/time/Duration;
-	public final fun copy (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;)Lcom/universalverify/trustedissuerregistry/RegistryOptions;
-	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/RegistryOptions;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/RegistryOptions;
+	public final fun component6 ()Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;
+	public final fun copy (Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;)Lcom/universalverify/trustedissuerregistry/RegistryOptions;
+	public static synthetic fun copy$default (Lcom/universalverify/trustedissuerregistry/RegistryOptions;Ljava/util/List;Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;Ljava/time/Duration;ZLjava/time/Duration;Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;ILjava/lang/Object;)Lcom/universalverify/trustedissuerregistry/RegistryOptions;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getCacheEnabled ()Z
 	public final fun getCacheTtl ()Ljava/time/Duration;
+	public final fun getRegistrySnapshot ()Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;
 	public final fun getRevocationCheckMode ()Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;
 	public final fun getTimeout ()Ljava/time/Duration;
 	public final fun getTrustedIssuerCertificates ()Ljava/util/List;
@@ -348,12 +351,23 @@ public final class com/universalverify/trustedissuerregistry/RegistryOptions$Bui
 	public final fun build ()Lcom/universalverify/trustedissuerregistry/RegistryOptions;
 	public final fun cacheEnabled (Z)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
 	public final fun cacheTtl (Ljava/time/Duration;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+	public final fun registrySnapshot (Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
 	public final fun revocationCheckMode (Lcom/universalverify/trustedissuerregistry/RevocationCheckMode;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
 	public final fun timeout (Ljava/time/Duration;)Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
 }
 
 public final class com/universalverify/trustedissuerregistry/RegistryOptions$Companion {
 	public final fun builder ()Lcom/universalverify/trustedissuerregistry/RegistryOptions$Builder;
+}
+
+public final class com/universalverify/trustedissuerregistry/RegistrySnapshot {
+	public static final field Companion Lcom/universalverify/trustedissuerregistry/RegistrySnapshot$Companion;
+	public static final fun fromJson (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;
+	public final fun getVersion ()Ljava/lang/String;
+}
+
+public final class com/universalverify/trustedissuerregistry/RegistrySnapshot$Companion {
+	public final fun fromJson (Ljava/lang/String;)Lcom/universalverify/trustedissuerregistry/RegistrySnapshot;
 }
 
 public final class com/universalverify/trustedissuerregistry/ResolveCertificateTrustOptions {
